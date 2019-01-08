@@ -11,7 +11,6 @@ body{
 .container{
     width:88%;
     margin:0px auto;
-    /* background:#faa; */
 }
 /* 1920px */
 @media screen and (min-width:1920px){
@@ -105,7 +104,7 @@ body{
     }
     .yc_body{
         width:100%;
-        height:500px;
+        height:35rem;;
         margin-top:15px;
         display:flex;
         justify-content:space-between;
@@ -212,7 +211,7 @@ body{
     }
     /*个性风潮*/
     .gx{
-        margin-top:8rem;
+        margin-top:4rem;
     }
     .gx_body{
         margin-top:15px;
@@ -674,6 +673,7 @@ body{
     }
     .yc_left{
         width:15%;
+        height:37rem;
     }
     .yc_left_title:before{
         content: "";
@@ -1770,6 +1770,7 @@ body{
     }
     .yc_left{
         width:15%;
+        height:19rem;
     }
     .yc_left_title:before{
         content: "";
@@ -1777,7 +1778,7 @@ body{
     }
     .yc_left_title{
         background:#5ad9cc;
-        height: 7rem;
+        height: 6rem;
     }
     .yc_left_title h2,.yc_left_title p{
         color:#fff;
@@ -1788,7 +1789,7 @@ body{
     }
     .yc_left_title h2{
         font-size:1.25rem;
-        margin-top:2rem;
+        margin-top:1.25rem;
     }
     .yc_left_img{
         border:1px solid #f1f1f1;
@@ -1800,7 +1801,7 @@ body{
     }
     .yc_middle1{
         width:33%;
-        height:20rem;
+        height:19rem;
         position:relative;
     }
     .yc_middle1 img,.yc_middle2 img{
@@ -1824,18 +1825,18 @@ body{
         background:#fff;
         border-radius:50%;
         position:absolute;
-        top:190px;
+        top:180px;
         left:20px;
         z-index: 2;
     }
     .yc_middle2{
         width:28%;
-        height:20rem;
+        height:19rem;
         position:relative;
     }
     .yc_right{
         width:20%;
-        height:20rem;
+        height:19rem;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2065,7 +2066,7 @@ body{
     /*嘻哈潮流*/
     .xh_body{
         margin-top:10px;
-        height:20rem;
+        height:17rem;
         width:100%;
         display:flex;
         justify-content: space-between;
@@ -2091,11 +2092,11 @@ body{
     }
     .xh_right{
         width:15%;
-        height:100%;
+        height:17rem;
     }
     .xh_right_title{
         background:#5ad9cc;
-        height: 7rem;
+        height: 6rem;
         text-align:center;
         color:#fff;
         font-family:Ruizi;
@@ -2107,7 +2108,7 @@ body{
     .xh_right_title h2{
         color:#fff;
         font-weight: normal;
-        margin-top:2rem;
+        margin-top:1.25rem;
         font-size:1rem;
     }
     .xh_right_title p{
@@ -2116,11 +2117,12 @@ body{
     }
     .xh_right_img{
         border:1px solid #f1f1f1;
+        text-align: center;
     }
     .xh_right_img img{
-        width:73%;
-        height:73%;
-        margin-left:17px;
+        width:60%;
+        height:60%;
+       
     }
     .xh_clothes_1_text{
         position:absolute;
@@ -2249,7 +2251,7 @@ body{
     }
     .dz{
         position:absolute;
-        top:90px;
+        top:110px;
     }
     .phone{
         position:absolute;
