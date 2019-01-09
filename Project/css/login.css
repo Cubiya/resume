@@ -3,17 +3,23 @@
     width:88%;
     margin:0px auto;
 }
+body::before{
+    content: "";
+    display:table;
+}
 /* 头部样式 */
 .head_body{
     width:100%;
     height:8rem;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
+    flex-wrap: nowrap;
 }
 .head_bj{
     width:100%;
     background-color:rgba(0,0,0,0.3);
     position: absolute;
+    z-index: 10;
 }
 .head_logo{
     width:235px;
@@ -23,20 +29,26 @@
 .head_nav>ul{
     line-height:8rem;
     list-style: none;
+    display:flex;
+    justify-content: space-between;
+    white-space: nowrap;
 }
 .head_user ul{
     list-style:none;
     margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .head_nav>ul>li,.head_user li{
     float:left;
     margin-left:30px;
 }
 .head_nav a{
-    font-size:16px;
+    font-size:1rem;
     text-decoration:none;
     color:#fff;
-    font-family: 'Ruizi';      
+    font-family: 'Ruizi';
 }
 .head_search input{
     width:15rem;
@@ -62,16 +74,23 @@
     width:35px;
     height:35px;
 }
+/* banner样式 */
+.banner{
+    position: absolute;
+}
 /* 登陆样式 */
+.login{
+    width:88%;
+    margin:200px auto;
+}
 .login_bj{
     width:25em;
     height:30em;
     background:#fff;
-    position:absolute;
-    top:200px;
-    right:200px;
     border-radius:10px;
     padding:20px;
+    position:relative;
+    left:70%;
 }
 .login_head,.login_user{
     margin-top:30px;
@@ -95,9 +114,6 @@
     font-size:1rem;
     margin-top:10px;
     border:1px solid #f2f2f2;
-}
-.login_auto{
-    
 }
 .login_auto input{
     margin-top:20px;
