@@ -5,310 +5,335 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cubiyo</title>
 	<link rel="stylesheet" href="css/index.css">
-	<style>
-		
-	</style>
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
-<div class="container">
-	<!--头部信息-->
-	<header>
-		<div class="head_body">
-			<!--logo-->
-			<div>
-				<img class="head_logo" src="img/logo.png" alt="logo">
-			</div>
-			<!--导航-->
-			<div class='head_nav'>
-				<ul>
-					<li><a href="#">首页</a></li>
-					<li><a href="#">购物车</a></li>
-					<li><a href="#">原创设计</a></li>
-					<li><a href="#">个性风潮</a></li>
-					<li><a href="#">青春流行</a></li>
-					<li><a href="#">嘻哈潮流</a></li>
-					<li><a href="#">联系我们</a></li>
-				</ul>
-			</div>	
-			<!--搜索栏-->
-			<div class='head_search'>
-				<input type="text" placeholder="请输入搜索内容">
-			</div>
-			<!--用户登录-->	
-			<div class=head_user >
-				<ul>
-					<li><img src="img/shopping_cart.png"></li>
-					<li><img src="img/x.png" id="head_x1"></li>
-					<li><img src="img/Collection.png"></li>
-					<li><img src="img/x.png" id="head_x2"></li>
-					<li><img src="img/user.png"></li>
-					<li><img src="img/nav.png" id=head_navbtn></li>
-				</ul>
-			</div>
+<!--头部信息-->
+<header>
+	<div class="head_body">
+		<!--logo-->
+		<div>
+			<img class="head_logo" src="img/logo.png" alt="logo">
 		</div>
-	</header>
-	<!--- banner-->
-	<div class="banner">
-		<div class="banner_img">
-			<img src="img/banner2.jpg">
-			<img src="img/banner1_1440.jpg">
-			<img src="img/banner1_1440.jpg">
+		<!--导航-->
+		<div class='head_nav'>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="#">原创设计</a></li>
+				<li><a href="#">个性风潮</a></li>
+				<li><a href="#">青春流行</a></li>
+				<li><a href="#">嘻哈潮流</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>	
+		<!--搜索栏-->
+		<div class='head_search'>
+			<input type="text" placeholder="请输入搜索内容">
+		</div>
+		<!--用户登录-->	
+		<div class=head_user >
+			<ul>
+				<li><img src="img/shopping_cart.png"></li>
+				<li><img src="img/x.png" id="head_x1"></li>
+				<li><img src="img/Collection.png"></li>
+				<li><img src="img/x.png" id="head_x2"></li>
+				<li><img src="img/user.png"></li>
+				<li><img src="img/nav.png" id=head_navbtn></li>
+			</ul>
 		</div>
 	</div>
-	<!--原创设计-->
-	<div class="yc">
-		<div class="yc_title">
-			<span>原创设计</span>
-			<span>Original design</span>
+</header>
+<!--- banner-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/banner1.jpg"></div>
+      <div class="swiper-slide"><img src="img/banner2.jpg"></div>
+      <div class="swiper-slide"><img src="img/banner3.jpg"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<!--原创设计-->
+<div class="yc">
+	<div class="yc_title">
+		<span>原创设计</span>
+		<span>Original design</span>
+	</div>
+	<div class="yc_body">
+		<div class="yc_left">
+			<div class="yc_left_title">
+				<h2>原创设计</h2>
+				<p>与众不同的设计好货</p>
+			</div>
+			<div class="yc_left_img">
+				<img src="img/yc_01.png">
+				<img src="img/yc_02.png">
+				<img src="img/yc_03.png">
+				<img src="img/yc_04.png">
+			</div>
 		</div>
-		<div class="yc_body">
-			<div class="yc_left">
-				<div class="yc_left_title">
-					<h2>原创设计</h2>
-					<p>与众不同的设计好货</p>
-				</div>
-				<div class="yc_left_img">
-					<img src="img/yc_01.png">
-					<img src="img/yc_02.png">
+		<div class="yc_middle1">
+			<img src="img/yc_05.jpg">
+			<div class="yc_middle1_logo">
+				<img src="img/yc_01.png">
+			</div>
+			<div class="yc_middle1_des">
+				<span>生活气氛组先行意识生活形态</span>
+			</div>
+		</div>
+		<div class="yc_middle2">
+			<img src="img/yc_06.jpg">
+			<div class="yc_middle2_logo">
+				<img src="img/yc_02.png">
+			</div>
+			<div class="yc_middle1_des">
+				<span>PSO新品首发</span>
+			</div>
+		</div>
+		<div class="yc_right">
+			<div class="yc_right_1">
+				<img src="img/yc_07.jpg">
+				<div class="yc_right_logo1">
 					<img src="img/yc_03.png">
+				</div>
+				<div class="yc_right_des">
+					<span>GAO暗黑设计,工具...</span>
+				</div>
+			</div>
+			<div class="yc_right_2">
+				<img src="img/yc_08.jpg">
+				<div class="yc_right_logo2">
 					<img src="img/yc_04.png">
 				</div>
-			</div>
-			<div class="yc_middle1">
-				<img src="img/yc_05.jpg">
-				<div class="yc_middle1_logo">
-					<img src="img/yc_01.png">
-				</div>
-				<div class="yc_middle1_des">
-					<span>生活气氛组先行意识生活形态</span>
-				</div>
-			</div>
-			<div class="yc_middle2">
-				<img src="img/yc_06.jpg">
-				<div class="yc_middle2_logo">
-					<img src="img/yc_02.png">
-				</div>
-				<div class="yc_middle1_des">
-					<span>PSO新品首发</span>
-				</div>
-			</div>
-			<div class="yc_right">
-				<div class="yc_right_1">
-					<img src="img/yc_07.jpg">
-					<div class="yc_right_logo1">
-						<img src="img/yc_03.png">
-					</div>
-					<div class="yc_right_des">
-						<span>GAO暗黑设计,工具...</span>
-					</div>
-				</div>
-				<div class="yc_right_2">
-					<img src="img/yc_08.jpg">
-					<div class="yc_right_logo2">
-						<img src="img/yc_04.png">
-					</div>
-					<div class="yc_right_des">
-						<span>Unawares摩登剪裁,简约..</span>
-					</div>
+				<div class="yc_right_des">
+					<span>Unawares摩登剪裁,简约..</span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- 个性风潮-->
-	<div class="gx">
-		<div class="gx_title">
-			<span>个性风潮</span>
-			<span>Personality</span>
+</div>
+<!-- 个性风潮-->
+<div class="gx">
+	<div class="gx_title">
+		<span>个性风潮</span>
+		<span>Personality</span>
+	</div>
+	<div class="gx_body">
+		<div class="gx_left_nav">
+			<div class="gx_left_title">
+				<p>个性风潮</p>
+				<hr/>
+				<a href="#">oversize</a>
+				<a href="#">中性</a>
+				<a href="#">拼接</a><br/>
+				<a href="#">街头</a>
+				<a href="#">国朝</a>
+				<a href="#">运动</a><br/>
+				<a href="#">机能</a>
+				<a href="#">涂鸦</a>
+				<a href="#">印花</a>
+			</div>
+			<div class="gx_left_lmk">
+				<img src="img/lmk.jpg">
+				<p>联名款</p>
+			</div>
+			<div class="gx_left_sjs">
+				<img src="img/sjs.jpg">
+				<p>设计师</p>
+			</div>
 		</div>
-		<div class="gx_body">
-			<div class="gx_left_nav">
-				<div class="gx_left_title">
-					<p>个性风潮</p>
+		<div class="gx_clothes_1">
+			<div class="gx_clothes_2_img">
+				<img src="img/gx_02.jpg">
+			</div>
+			<div class="gx_logo01">
+				<img src="img/gx_logo01.png" >
+			</div>
+			<p>从一而终，暗黑至极</p>
+		</div>
+		<div class="gx_clothes_2">
+			<div class="gx_clothes_2_img">
+				<img src="img/gx_03.jpg">
+			</div>
+			<div class="gx_logo01">
+				<img src="img/gx_logo02.png">
+			</div>
+			<p>闪电潮牌敢潮你就来</p>
+		</div>
+		<div class="gx_clothes_3">
+			<div class="gx_clothes_3_img">
+				<img src="img/gx_01.jpg">
+			</div>
+		</div>
+		<div class="gx_clothes_4">
+			<div class="gx_clothes_2_img">
+				<img src="img/gx_04.jpg">
+			</div>
+			<div class="gx_logo01">
+				<img src="img/gx_logo01.png">
+			</div>
+			<p>本土原创潮牌</p>
+		</div>
+		<div class="gx_clothes_5">
+			<div class="gx_clothes_2_img">
+				<img src="img/gx_05.jpg">
+			</div>
+			<div class="gx_logo01">
+				<img src="img/gx_logo03.png">
+			</div>
+			<p>潮流街头品质第一</p>
+		</div>
+		<div class="gx_clothes_6">
+			<div class="gx_clothes_2_img">
+				<img src="img/gx_06.jpg">
+			</div>
+			<div class="gx_logo01">
+				<img src="img/gx_logo04.png">
+			</div>
+			<p>购买新品赠送挎包</p>
+		</div>
+	</div>
+</div>
+<!-- 青春流行-->
+<div class="qc">
+	<div class="qc_title">
+		<span>青春流行</span>
+		<span>Youth</span>
+	</div>
+	<div class="qc_body">
+		<div class="qc_left">
+			<div class="qc_left_bj"></div>
+		</div>
+		<div class="qc_clothes_1">
+			<div class="qc_clothes1_img">
+				<img src="img/qc_01.jpg">
+			</div>
+			<div class="qc_clothes1_logo">
+				<img src="img/qc_logo01.png" >
+			</div>
+			<p>弄潮为乐，青春不凡</p>
+		</div>
+		<div class="qc_clothes_2">
+			<div class="qc_clothes1_img">
+				<img src="img/qc_02.jpg">
+
+			</div>
+			<div class="qc_clothes1_logo">
+				<img src="img/qc_logo02.png">
+			</div>
+			<p>日系潮流我做主</p>
+		</div>
+		<div class="qc_clothes_3">
+			<div class="qc_clothes1_img">
+				<img src="img/qc_03.jpg">
+			</div>
+			<div class="qc_clothes1_logo">
+				<img src="img/qc_logo03.png">
+			</div>
+			<p>原创日韩风</p>
+		</div>
+		<div class="qc_clothes_4">
+			<div class="qc_clothes1_img">
+				<img src="img/qc_04.jpg">
+			</div>
+			<div class="qc_clothes1_logo">
+				<img src="img/qc_logo04.png">
+			</div>
+			<p>你喜欢，你就买。</p>
+		</div>
+		<div class="qc_clothes_5">
+			<div class="qc_clothes1_img">
+				<img src="img/qc_05.jpg">
+			</div>
+			<div class="qc_clothes1_logo">
+				<img src="img/qc_logo05.png">
+			</div>
+			<p>不断创新 跃进不止</p>
+		</div>
+		<div class="qc_clothes_6">
+			<div class="qc_clothes1_img">
+				<img src="img/qc_06.jpg">
+			</div>
+			<div class="qc_clothes1_logo">
+				<img src="img/qc_logo06.png">
+			</div>
+			<p>傲娇小爷潮搭达人</p>
+		</div>
+		<div class="qc_right">
+			<div class="qc_right_bj"></div>
+		</div>
+		<div class="qc_right_title">
+			<img src="img/qc_man.png" class="qc_man">
+			<div class="qc_right_nav">
+				<div class="qc_text">
+					<h2>青春流行</h2>
 					<hr/>
-					<a href="#">oversize</a>
-					<a href="#">中性</a>
-					<a href="#">拼接</a><br/>
-					<a href="#">街头</a>
-					<a href="#">国朝</a>
-					<a href="#">运动</a><br/>
-					<a href="#">机能</a>
-					<a href="#">涂鸦</a>
-					<a href="#">印花</a>
+					<img src="img/qc_xiezi.png"><br/><br/>
+					<a href="#">ins</a>
+					<a href="#">风条纹</a>
+					<a href="#">oversize</a><br/>
+					<a href="#">做旧</a>
+					<a href="#">BF风</a>
+					<a href="#">小清新</a><br/>
+					<a href="#">学院风</a>
+					<a href="#">紫色</a>
+					<a href="#">日系</a>
 				</div>
-				<div class="gx_left_lmk">
-					<img src="img/lmk.jpg">
-					<p>联名款</p>
+				<div class="qc_right_dpd">
+					<img src="img/qc_podong.jpg">
+					<p>Wilson</p>
 				</div>
-				<div class="gx_left_sjs">
-					<img src="img/sjs.jpg">
-					<p>设计师</p>
-				</div>
-			</div>
-			<div class="gx_clothes_1">
-				<div class="gx_clothes_2_img">
-					<img src="img/gx_02.jpg">
-					<img src="img/gx_logo01.png" id="gx_logo01">
-				</div>
-				<p>从一而终，暗黑至极</p>
-			</div>
-			<div class="gx_clothes_2">
-				<div class="gx_clothes_2_img">
-					<img src="img/gx_03.jpg">
-					<img src="img/gx_logo02.png" id="gx_logo01">
-				</div>
-				<p>闪电潮牌敢潮你就来</p>
-			</div>
-			<div class="gx_clothes_3">
-				<div class="gx_clothes_3_img">
-					<img src="img/gx_01.jpg">
-				</div>
-			</div>
-			<div class="gx_clothes_4">
-				<div class="gx_clothes_2_img">
-					<img src="img/gx_04.jpg">
-					<img src="img/gx_logo01.png" id="gx_logo01">
-				</div>
-				<p>本土原创潮牌</p>
-			</div>
-			<div class="gx_clothes_5">
-				<div class="gx_clothes_2_img">
-					<img src="img/gx_05.jpg">
-					<img src="img/gx_logo03.png" id="gx_logo01">
-				</div>
-				<p>潮流街头品质第一</p>
-			</div>
-			<div class="gx_clothes_6">
-				<div class="gx_clothes_2_img">
-					<img src="img/gx_06.jpg">
-					<img src="img/gx_logo04.png" id="gx_logo01">
-				</div>
-				<p>购买新品赠送挎包</p>
-			</div>
-		</div>
-	</div>
-	<!-- 青春流行-->
-	<div class="qc">
-		<div class="qc_title">
-			<span>青春流行</span>
-			<span>Youth</span>
-		</div>
-		<div class="qc_body">
-			<div class="qc_left">
-				<div class="qc_left_bj"></div>
-			</div>
-			<div class="qc_clothes_1">
-				<div class="qc_clothes1_img">
-					<img src="img/qc_01.jpg">
-					<img src="img/qc_logo01.png" id="qc_clothes1_logo">
-				</div>
-				<p>弄潮为乐，青春不凡</p>
-			</div>
-			<div class="qc_clothes_2">
-				<div class="qc_clothes1_img">
-					<img src="img/qc_02.jpg">
-					<img src="img/qc_logo02.png" id="qc_clothes1_logo">
-				</div>
-				<p>日系潮流我做主</p>
-			</div>
-			<div class="qc_clothes_3">
-				<div class="qc_clothes1_img">
-					<img src="img/qc_03.jpg">
-					<img src="img/qc_logo03.png" id="qc_clothes1_logo">
-				</div>
-				<p>原创日韩风</p>
-			</div>
-			<div class="qc_clothes_4">
-				<div class="qc_clothes1_img">
-					<img src="img/qc_04.jpg">
-					<img src="img/qc_logo04.png" id="qc_clothes1_logo">
-				</div>
-				<p>你喜欢，你就买。</p>
-			</div>
-			<div class="qc_clothes_5">
-				<div class="qc_clothes1_img">
-					<img src="img/qc_05.jpg">
-					<img src="img/qc_logo05.png" id="qc_clothes1_logo">
-				</div>
-				<p>不断创新 跃进不止</p>
-			</div>
-			<div class="qc_clothes_6">
-				<div class="qc_clothes1_img">
-					<img src="img/qc_06.jpg">
-					<img src="img/qc_logo06.png" id="qc_clothes1_logo">
-				</div>
-				<p>傲娇小爷潮搭达人</p>
-			</div>
-			<div class="qc_right">
-				<div class="qc_right_bj"></div>
-			</div>
-			<div class="qc_right_title">
-				<img src="img/qc_man.png" class="qc_man">
-				<div class="qc_right_nav">
-					<div class="qc_text">
-						<h2>青春流行</h2>
-						<hr/>
-						<img src="img/qc_xiezi.png"><br/><br/>
-						<a href="#">ins</a>
-						<a href="#">风条纹</a>
-						<a href="#">oversize</a><br/>
-						<a href="#">做旧</a>
-						<a href="#">BF风</a>
-						<a href="#">小清新</a><br/>
-						<a href="#">学院风</a>
-						<a href="#">紫色</a>
-						<a href="#">日系</a>
-					</div>
-					<div class="qc_right_dpd">
-						<img src="img/qc_podong.jpg">
-						<p>Wilson</p>
-					</div>
-					<div class="qc_right_cb">
-						<img src="img/qc_chuangbiao.jpg">
-						<p>Cubi</p>
-					</div>
+				<div class="qc_right_cb">
+					<img src="img/qc_chuangbiao.jpg">
+					<p>Cubi</p>
 				</div>
 			</div>
 		</div>
 	</div>
-		<!-- 嘻哈潮流-->
-		<div class="xh">
-			<div class="xh_title">
-				<span>嘻哈潮流</span>
-				<span>Hip hop trend</span>
-			</div>
-			<div class="xh_body">
-				<div class="xh_clothes_1">
-					<img src="img/xh_01.jpg">
-					<div class="xh_clothes_1_text">
-						<span>秋季欧美潮牌个性印花圆领卫衣男嘻哈宽松oversize国潮情侣外套女</span>
-					</div>
-				</div>
-				<div class="xh_clothes_2">
-					<img src="img/xh_02.jpg">
-					<div class="xh_clothes_1_text">
-						<span>美式街头简约字母连帽卫衣男女情侣加绒加大码宽松长袖套帽外套潮</span>
-					</div>
-				</div>
-				<div class="xh_clothes_3">
-					<img src="img/xh_03.jpg">
-					<div class="xh_clothes_1_text">
-						<span>欧美街头潮牌oversize宽松情侣卫衣男潮流外套</span>
-					</div>
-				</div>
-				<div class="xh_right">
-					<div class="xh_right_title">
-						<h2>嘻哈潮流</h2>
-						<p>潮店主教你如何穿搭</p>
-					</div>
-					<div class="xh_right_img">
-						<img src="img/yc_01.png">
-						<img src="img/yc_02.png">
-						<img src="img/yc_03.png">
-						<img src="img/yc_04.png">
-					</div>
-				</div>
+</div>
+<!-- 嘻哈潮流-->
+<div class="xh">
+	<div class="xh_title">
+		<span>嘻哈潮流</span>
+		<span>Hip hop trend</span>
+	</div>
+	<div class="xh_body">
+		<div class="xh_clothes_1">
+			<img src="img/xh_01.jpg">
+			<div class="xh_clothes_1_text">
+				<span>秋季欧美潮牌个性印花圆领卫衣男嘻哈宽松oversize国潮情侣外套女</span>
 			</div>
 		</div>
+		<div class="xh_clothes_2">
+			<img src="img/xh_02.jpg">
+			<div class="xh_clothes_1_text">
+				<span>美式街头简约字母连帽卫衣男女情侣加绒加大码宽松长袖套帽外套潮</span>
+			</div>
+		</div>
+		<div class="xh_clothes_3">
+			<img src="img/xh_03.jpg">
+			<div class="xh_clothes_1_text">
+				<span>欧美街头潮牌oversize宽松情侣卫衣男潮流外套</span>
+			</div>
+		</div>
+		<div class="xh_right">
+			<div class="xh_right_title">
+				<h2>嘻哈潮流</h2>
+				<p>潮店主教你如何穿搭</p>
+			</div>
+			<div class="xh_right_img">
+				<img src="img/yc_01.png">
+				<img src="img/yc_02.png">
+				<img src="img/yc_03.png">
+				<img src="img/yc_04.png">
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 <!-- 底部信息-->
 <div class="footer">
@@ -380,6 +405,21 @@
 			<p>Copyright © 2018 曾浩强 版权所有</p>
 		</div>
 	</div>
-</div>
+	<script src="js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+		  slidesPerView: 1,
+		  spaceBetween: 30,
+		  loop: true,
+		  pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		  },
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		});
+	  </script>
 </body>
 </html>

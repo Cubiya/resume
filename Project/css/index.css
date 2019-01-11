@@ -8,2273 +8,596 @@ body{
     font-family: 'Ruizi';   /*字体名称*/
     src: url('../font/ruizi.ttf');       /*字体源文件*/
 }
-.container{
-    width:88%;
+/* 头部样式 */
+.head_body{
+    width:1440px;
+    height:150px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    margin:0 auto;
+}
+.head_bj{
+    width:100%;
+    background-color:rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 10;
+}
+.head_logo{
+    width:235px;
+    height:100px;
+    margin-top:10px;
+}
+.head_nav>ul{
+    line-height:8rem;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.head_user ul{
+    list-style:none;
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.head_nav>ul>li,.head_user li{
+    float:left;
+    margin-left:30px;
+}
+.head_nav a{
+    font-size:1rem;
+    text-decoration:none;
+    color:#333;
+    font-family: 'Ruizi';
+}
+.head_search input{
+    width:15rem;
+    height:2rem;
+    border:0;
+    border-radius:5px;
+    padding-left:12px;
+    margin-left:1rem;
+    margin-top:3rem;
+    background:#f1f1f1 url('../img/search.png') no-repeat 13rem 4px;
+    background-size:25px 25px;
+}
+.head_user img{
+    width:27px;
+    height:27px;
+}
+#head_x1,#head_x2{
+    width:1px;
+    height:27px;
+}
+#head_navbtn{
+    margin-left:10px;
+    width:35px;
+    height:35px;
+}
+/* banner样式 */
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+/*原创设计*/
+.yc{
+    margin:0px auto;
+    width:1440px;
+    height:550px;
+}
+.yc_title,.gx_title,.qc_title,.xh_title{
+    margin-top:40px;
+}
+.yc_title span:first-child,.gx_title span:first-child,.qc_title span:first-child,.xh_title span:first-child{
+    font-family: Ruizi;
+    font-size:24px;
+    color:#333;
+}
+.yc_title span:last-child,.gx_title span:last-child,.qc_title span:last-child,.xh_title span:last-child{
+    font-family:Ruizi;
+    font-size:18px;
+    color:#e1e1e1;
+    margin-left:5px;
+}
+.yc_body{
+    width:1440px;
+    height:500px;
+    margin-top:15px;
+    display:flex;
+    justify-content:space-between;
+}
+.yc_left{
+    width:17%;
+}
+.yc_left_title:before{
+    content: "";
+    display:table;
+}
+.yc_left_title{
+    background:#5ad9cc;
+    height: 8rem;
+}
+.yc_left_title h2,.yc_left_title p{
+    color:#fff;
+    text-align:center;
+    font-family:Ruizi;
+    margin-top:1rem;
+}
+.yc_left_title h2{
+    margin-top:2rem;
+}
+.yc_left_img{
+    border:1px solid #f1f1f1;
+    text-align: center
+}
+.yc_left_img img{
+    width:69%;
+    height:69%;
+}
+.yc_middle1{
+    width:33%;
+    position:relative;
+}
+.yc_middle1 img,.yc_middle2 img{
+    width:100%;
+    height:100%;
+}
+.yc_middle1_des{
+    width:100%;
+    height:100px;
+    position:absolute;
+    background:rgba(0,0,0,0.3);
+    bottom: 1px;
+    color:#fff;
+    text-align:center;
+    line-height:100px;
+    font-family:Ruizi;
+}
+.yc_middle1_logo,.yc_middle2_logo{
+    width:120px;
+    height:120px;
+    background:#fff;
+    border-radius:50%;
+    position:absolute;
+    top:330px;
+    left:20px;
+    z-index: 2;
+}
+.yc_middle2{
+    width:28%;
+    position:relative;
+}
+.yc_right{
+    width:18%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative;
+}
+.yc_right_1,.yc_right_2{
+    width:100%;
+    height:49%;
+    position:relative;
+}
+.yc_right img{
+    width:100%;
+    height:100%;
+}
+.yc_right_des{
+    position:absolute;
+    bottom: 1px;
+    background:rgba(0,0,0,0.3);
+    width:100%;
+    height:50px;
+    color: #ffffff;
+    text-align: center;
+    line-height:50px;
+}
+.yc_right_logo1,.yc_right_logo2{
+    width:100px;
+    height:100px;
+    background:#fff;
+    border-radius:50%;
+    position:absolute;
+    top:100px;
+    left:20px;
+    z-index: 2;
+}
+/*个性风潮*/
+.gx{
+    width:1440px;
+    height:625px;
     margin:0px auto;
 }
-/* 1920px */
-@media screen and (min-width:1920px){
-    .container{
-        width: 88%;
-        margin:0px auto;
-    }
-    /* 头部样式 */
-    .head_body{
-        width:100%;
-        height:8rem;
-        display: flex;
-        justify-content:space-between;
-    }
-    .head_logo{
-        width:235px;
-        height:100px;
-        margin-top:10px;
-    }
-    .head_nav>ul{
-        line-height:8rem;
-        list-style: none;
-    }
-    .head_user ul{
-        list-style:none;
-        margin-top:50px;
-    }
-    .head_nav>ul>li,.head_user li{
-        float:left;
-        margin-left:30px;
-    }
-    .head_nav a{
-        font-size:16px;
-        text-decoration:none;
-        color:#666;
-        font-family: 'Ruizi';      
-    }
-    .head_search input{
-        width:15rem;
-        height:2rem;
-        border:0;
-        border-radius:5px;
-        padding-left:12px;
-        margin-left:1rem;
-        margin-top:3rem;
-        background:#f1f1f1 url('../img/search.png') no-repeat 13rem 4px;
-        background-size:25px 25px;
-    }
-    .head_user img{
-        width:27px;
-        height:27px;
-    }
-    #head_x1,#head_x2{
-        width:1px;
-        height:27px;
-    }
-    #head_navbtn{
-        margin-left:10px;
-        width:35px;
-        height:35px;
-    }
-    /* banner样式 */
-    .banner_img{
-        width:100%;
-        height:600px;
-    }
-    .banner_img img{
-        width:100%;
-        display: none;
-    }
-    .banner_img img:first-child{
-        display:block;
-    }
-    /*原创设计*/
-    .yc{
-        margin-top:8rem;
-    }
-    .yc_left{
-        height:37rem;
-    }
-    .yc_title span:first-child,.gx_title span:first-child,.qc_title span:first-child,.xh_title span:first-child{
-        font-family: Ruizi;
-        font-size:24px;
-        color:#333;
-    }
-    .yc_title span:last-child,.gx_title span:last-child,.qc_title span:last-child,.xh_title span:last-child{
-        font-family:Ruizi;
-        font-size:18px;
-        color:#e1e1e1;
-        margin-left:5px;
-    }
-    .yc_body{
-        width:100%;
-        height:35rem;;
-        margin-top:15px;
-        display:flex;
-        justify-content:space-between;
-    }
-    .yc_left{
-        width:15%;
-    }
-    .yc_left_title:before{
-        content: "";
-        display:table;
-    }
-    .yc_left_title{
-        background:#5ad9cc;
-        height: 8rem;
-    }
-    .yc_left_title h2,.yc_left_title p{
-        color:#fff;
-        text-align:center;
-        font-family:Ruizi;
-        margin-top:1rem;
-    }
-    .yc_left_title h2{
-        margin-top:2rem;
-    }
-    .yc_left_img{
-        border:1px solid #f1f1f1;
-    }
-    .yc_left_img img{
-        width:83%;
-        height:83%;
-        margin-left:1rem;
-    }
-    .yc_middle1{
-        width:33%;
-        height:37rem;
-        position:relative;
-    }
-    .yc_middle1 img,.yc_middle2 img{
-        width:100%;
-        height:100%;
-    }
-    .yc_middle1_des{
-        width:100%;
-        height:100px;
-        position:absolute;
-        background:rgba(0,0,0,0.3);
-        bottom: 1px;
-        color:#fff;
-        text-align:center;
-        line-height:100px;
-        font-family:Ruizi;
-    }
-    .yc_middle1_logo,.yc_middle2_logo{
-        width:120px;
-        height:120px;
-        background:#fff;
-        border-radius:50%;
-        position:absolute;
-        top:420px;
-        left:20px;
-        z-index: 2;
-    }
-    .yc_middle2{
-        width:28%;
-        height:37rem;
-        position:relative;
-    }
-    .yc_right{
-        width:20%;
-        height:37rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position:relative;
-    }
-    .yc_right_1,.yc_right_2{
-        width:100%;
-        height:49%;
-        position:relative;
-    }
-    .yc_right img{
-        width:100%;
-        height:100%;
-    }
-    .yc_right_des{
-        position:absolute;
-        bottom: 1px;
-        background:rgba(0,0,0,0.3);
-        width:100%;
-        height:50px;
-        color: #ffffff;
-        text-align: center;
-        line-height:50px;
-    }
-    .yc_right_logo1,.yc_right_logo2{
-        width:100px;
-        height:100px;
-        background:#fff;
-        border-radius:50%;
-        position:absolute;
-        top:150px;
-        left:20px;
-        z-index: 2;
-    }
-    /*个性风潮*/
-    .gx{
-        margin-top:4rem;
-    }
-    .gx_body{
-        margin-top:15px;
-        background:#f1f1f1;
-        width:100%;
-        height:39rem;
-        display:flex;
-        justify-content: space-around;
-    }
-    .gx_left_nav{
-        width:20%;
-        height:100%;
-    }
-    .gx_clothes_1,.gx_clothes_2,.gx_clothes_3,.gx_clothes_4,.gx_clothes_5,.gx_clothes_6{
-        width:12%;
-        height:100%;
-    }
-    .gx_clothes_3{
-        margin:0px 15px;
-    }
-    .gx_left_title{
-        margin-top:40px;
-        padding:10px;
-        margin-left:10px;
-    }
-    .gx_left_title p{
-        margin-bottom: 10px;
-        font-size:20px;
-        font-family:Ruizi;
-        color:#333;
-    }
-    .gx_left_title a{
-        text-decoration:none;
-        color:#333;
-        font-family:Ruizi;
-        display:inline-block;
-        padding:5px;
-        background:#fff;
-        border:1px solid #999;
-        border-radius:5px;
-        margin-left:10px;
-        margin-top:10px;
-    }
-    .gx_left_lmk,.gx_left_sjs{
-        width:110px;
-        height:110px;
-        display:inline-block;
-        margin-left:40px;
-        text-align:center;
-        margin-top:200px;
-    }
-    .gx_left_lmk img,.gx_left_sjs img{
-        width:100%;
-        height:100%;
-        border-radius:50%;
-    }
-    .gx_clothes_1_img,.gx_clothes_2_img{
-        width:100%;
-        height:90%;
-        background:#fff;
-        margin-top:20px;
-    }
-   .gx_clothes_2_img img{
-        width:100%;
-    }
-    #gx_logo01{
-        width:70%;
-        height:10%;
-        margin-left:25px;
-    }
-    .gx_clothes_1 p,.gx_clothes_2 p,.gx_clothes_3 p,.gx_clothes_4 p,.gx_clothes_5 p,.gx_clothes_6 p{
-        text-align:center;
-        margin-top:10px;
-        font-family:Ruizi;
-        color:#333;
-        font-size:16px;
-    }
-    .gx_clothes_3_img{
-        width:100%;
-        height:82%;
-        background:#fff;
-        margin-top:20px;
-    }
-    /*青春流行*/
-    .qc{
-        margin-top:3rem;
-    }
-    .qc_body{
-        width:100%;
-        height:39rem;
-        margin-top:10px;
-        display:flex;
-        justify-content:space-around;
-        background:#f1f1f1;
-    }
-    .qc_left,.qc_right{
-        width:3%;
-        height:100%;
-    }
-    .qc_clothes_1,.qc_clothes_2,.qc_clothes_3,.qc_clothes_4,.qc_clothes_5,.qc_clothes_6{
-        width:12%;
-        height:100%;
-    }
-    .qc_right_title{
-        width:16%;
-        height:100%;
-        margin-right:10px;
-        position:relative;
-    }
-    .qc_left_bj,.qc_right_bj{
-        width:30px;
-        height:60px;
-        background:rgba(0,0,0,0.3) url(../img/left.png) no-repeat 0px 15px;
-        background-size:30px 30px;
-        margin:220px auto;
-        border-radius:5px;
-    }
-    .qc_right_bj{
-        background:rgba(0,0,0,0.3) url(../img/right.png) no-repeat 0px 15px;
-        background-size:30px 30px;
-    }
-    .qc_clothes1_img{
-        width:100%;
-        height:90%;
-        margin-top:20px;
-        background:#fff;
-    }
-    .qc_clothes1_img img{
-        width:100%;
-    }
-    #qc_clothes1_logo{
-        width:50%;
-        height:10%;
-        margin-left:40px;
-    }
-    .qc_clothes_1 p,.qc_clothes_2 p,.qc_clothes_3 p,.qc_clothes_4 p,.qc_clothes_5 p,.qc_clothes_6 p{
-        text-align:center;
-        margin-top:10px;
-        font-family:Ruizi;
-        color:#333;
-        font-size:16px;
-    }
-    .qc_right_nav{
-        width:100%;
-        height:90%;
-        background:#fff;
-        margin-top:20px;
-    }
-    .qc_text{
-        padding:15px;
-    }
-    .qc_text h2{
-        margin-bottom:10px;
-        font-weight: normal;
-        font-family:Ruizi;
-        color:#333;
-    }
-    .qc_text a{
-        text-decoration:none;
-        color:#333;
-        font-family:Ruizi;
-        margin-left:10px;
-        margin-top:10px;
-        display:inline-block;
-    }
-    .qc_right_dpd,.qc_right_cb{
-        width:80px;
-        height:80px;
-        background:#fff;
-        display:inline-block;
-        margin-top:150px;
-        margin-left:35px;
-        text-align: center;
-    }
-    .qc_right_dpd img,.qc_right_cb img{
-        width:100%;
-        border-radius:50%;
-    }
-    .qc_man{
-        position:absolute;
-        right:0px;
-    }
-    /*嘻哈潮流*/
-    .xh{
-        margin-top:3rem;
-    }
-    .xh_body{
-        margin-top:10px;
-        height:33rem;
-        width:100%;
-        display:flex;
-        justify-content: space-between;
-    }
-    .xh_clothes_1{
-        width:32%;
-        height:100%;
-        position:relative;
-    }
-    .xh_clothes_1 img,.xh_clothes_2 img,.xh_clothes_3 img{
-        width:100%;
-        height:100%;
-    }
-    .xh_clothes_2{
-        width:28%;
-        height:100%;
-        position:relative;
-    }
-    .xh_clothes_3{
-        width:20%;
-        height:100%;
-        position:relative;
-    }
-    .xh_right{
-        width:15%;
-        height:100%;
-    }
-    .xh_right_title{
-        background:#5ad9cc;
-        height: 8rem;
-        text-align:center;
-        color:#fff;
-        font-family:Ruizi;
-    }
-    .xh_right_title:before{
-        content:"";
-        display:table;;
-    }
-    .xh_right_title h2{
-        color:#fff;
-        font-weight: normal;
-        margin-top:2rem;
-    }
-    .xh_right_title p{
-        margin-top:1rem;
-    }
-    .xh_right_img{
-        border:1px solid #f1f1f1;
-    }
-    .xh_right_img img{
-        width:72%;
-        height:72%;
-        margin-left:25px;
-    }
-    .xh_clothes_1_text{
-        position:absolute;
-        background:rgba(0,0,0,0.3);
-        bottom:0px;
-        color:#fff;
-        font-family:Ruizi;
-        padding:1rem;
-        text-align:center;
-        line-height:1.5rem;
-    }
-    /*底部信息*/
-    .footer{
-        width:100%;
-        height:500px;
-        background:#f1f1f1;
-        margin-top:50px;
-    }
-    .foot{
-        width:88%;
-        margin:0px auto;
-    }
-    .foot_body{
-        display:flex;
-
-    }
-    .foot_lx{
-        width:25%;
-        position:relative;
-        margin-top:20px;
-    }
-    .foot_rm{
-        width:100%;
-        margin-top:80px;
-        display:flex;
-        justify-content: space-around;
-    }
-    .foot_lx ul,.foot_rm ul{
-        list-style:none;
-    }
-    .foot_lx span{
-        display:inline-block;
-        font-family:Ruizi;
-        color:#666;
-        margin-left:10px;
-        font-size:18px;
-    }
-    .foot_rm li{
-        margin-top:20px;
-    }
-    .foot_rm a{
-        margin-left:20px;
-        text-decoration: none;
-        color:#666;
-    }
-    .foot_nav{
-        width:50%;
-        height:100%;
-        display: flex;
-        justify-content:space-around;
-    }
-    .foot_tx{
-        width:25%;
-        height:100%;
-    }
-    .foot_tx_body{
-        margin-top:100px;
-        margin-left:50px;
-    }
-    .foot_search{
-        width:15rem;
-        border:0;
-        height:40px;
-        border-radius:10px;
-        padding-left:10px;
-        margin-top:20px;
-        margin-bottom:20px;
-        background:#fff url(../img/send.png) no-repeat 90%;
-        background-size:30px 30px;
-    }
-    .foot_tx_lx{
-        width:100%;
-        display: flex;
-        margin-top:20px;
-        justify-content:space-between;
-    }
-    .foot_gz,.foot_code{
-        width:50%;
-    }
-    .foot_gz img{
-        width:30px;
-        height:30px;
-        margin-top:10px;
-    }
-    .foot_gz p{
-        font-size:20px;
-    }
-    .foot_code img{
-        width:150px;
-        height:150px;
-        display:inline-block;
-    }
-    .foot_hr{
-        margin-top:30px;
-        color:#666;
-    }
-    .foot_bq{
-        text-align:center;
-        margin-top:10px;
-    }
-    .dz{
-        position:absolute;
-        top:135px;
-    }
-    .phone{
-        position:absolute;
-        top:235px;
-    }
-    .email{
-        position:absolute;
-        top:335px;
-    }
-} 
-/* 1728px */
-@media screen and (min-width:1728px) and (max-width:1919px){
-    .container{
-        width: 88%;
-        margin:0px auto;
-    }
-    /* 头部样式 */
-    .head_body{
-        width:100%;
-        height:8rem;
-        display: flex;
-        justify-content:space-between;
-    }
-    .head_logo{
-        width:235px;
-        height:100px;
-        margin-top:10px;
-    }
-    .head_nav>ul{
-        line-height:8rem;
-        list-style: none;
-    }
-    .head_user ul{
-        list-style:none;
-        margin-top:50px;
-    }
-    .head_nav>ul>li,.head_user li{
-        float:left;
-        margin-left:15px;
-    }
-    .head_nav a{
-        font-size:16px;
-        text-decoration:none;
-        color:#666;
-        font-family: 'Ruizi';      
-    }
-    .head_search input{
-        width:15rem;
-        height:2rem;
-        border:0;
-        border-radius:5px;
-        padding-left:12px;
-        margin-left:1rem;
-        margin-top:3rem;
-        background:#f1f1f1 url('../img/search.png') no-repeat 13rem 4px;
-        background-size:25px 25px;
-    }
-    .head_user img{
-        width:27px;
-        height:27px;
-    }
-    #head_x1,#head_x2{
-        width:1px;
-        height:27px;
-    }
-    #head_navbtn{
-        margin-left:10px;
-        width:35px;
-        height:35px;
-    }
-    /* banner样式 */
-    .banner_img{
-        width:100%;
-        height:600px;
-    }
-    .banner_img img{
-        width:100%;
-        display: none;
-    }
-    .banner_img img:first-child{
-        display:block;
-    }
-    /*原创设计*/
-    .yc_title span:first-child,.gx_title span:first-child,.qc_title span:first-child,.xh_title span:first-child{
-        font-family: Ruizi;
-        font-size:24px;
-        color:#333;
-    }
-    .yc_title span:last-child,.gx_title span:last-child,.qc_title span:last-child,.xh_title span:last-child{
-        font-family:Ruizi;
-        font-size:18px;
-        color:#e1e1e1;
-        margin-left:5px;
-    }
-    .yc{
-        margin-top:4rem;
-    }
-    .yc_body{
-        width:100%;
-        height:35rem;
-        margin-top:15px;
-        display:flex;
-        justify-content:space-between;
-    }
-    .yc_left{
-        width:15%;
-        height:37rem;
-    }
-    .yc_left_title:before{
-        content: "";
-        display:table;
-    }
-    .yc_left_title{
-        background:#5ad9cc;
-        height: 8rem;
-    }
-    .yc_left_title h2,.yc_left_title p{
-        color:#fff;
-        text-align:center;
-        font-family:Ruizi;
-        margin-top:1rem;
-    }
-    .yc_left_title h2{
-        margin-top:2rem;
-    }
-    .yc_left_img{
-        border:1px solid #f1f1f1;
-    }
-    .yc_left_img img{
-        width:83%;
-        height:83%;
-        margin-left:1rem;
-    }
-    .yc_middle1{
-        width:33%;
-        height:34rem;
-        position:relative;
-    }
-    .yc_middle1 img,.yc_middle2 img{
-        width:100%;
-        height:100%;
-    }
-    .yc_middle1_des{
-        width:100%;
-        height:100px;
-        position:absolute;
-        background:rgba(0,0,0,0.3);
-        bottom: 1px;
-        color:#fff;
-        text-align:center;
-        line-height:100px;
-        font-family:Ruizi;
-    }
-    .yc_middle1_logo,.yc_middle2_logo{
-        width:120px;
-        height:120px;
-        background:#fff;
-        border-radius:50%;
-        position:absolute;
-        top:330px;
-        left:20px;
-        z-index: 2;
-    }
-    .yc_middle2{
-        width:28%;
-        height:34rem;
-        position:relative;
-    }
-    .yc_right{
-        width:20%;
-        height:34rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position:relative;
-    }
-    .yc_right_1,.yc_right_2{
-        width:100%;
-        height:49%;
-        position:relative;
-    }
-    .yc_right img{
-        width:100%;
-        height:100%;
-    }
-    .yc_right_des{
-        position:absolute;
-        bottom: 1px;
-        background:rgba(0,0,0,0.3);
-        width:100%;
-        height:50px;
-        color: #ffffff;
-        text-align: center;
-        line-height:50px;
-    }
-    .yc_right_logo1,.yc_right_logo2{
-        width:100px;
-        height:100px;
-        background:#fff;
-        border-radius:50%;
-        position:absolute;
-        top:110px;
-        left:20px;
-        z-index: 2;
-    }
-    /*个性风潮*/
-    .gx,.qc,.xh{
-        margin-top:30px;
-    }
-    .gx_body{
-        margin-top:15px;
-        background:#f1f1f1;
-        width:100%;
-        height:36rem;
-        display:flex;
-        justify-content: space-around;
-    }
-    .gx_left_nav{
-        width:20%;
-        height:100%;
-    }
-    .gx_clothes_1,.gx_clothes_2,.gx_clothes_3,.gx_clothes_4,.gx_clothes_5,.gx_clothes_6{
-        width:12%;
-        height:100%;
-    }
-    .gx_clothes_3{
-        margin:0px 15px;
-    }
-    .gx_left_title{
-        margin-top:40px;
-        padding:10px;
-        margin-left:10px;
-    }
-    .gx_left_title p{
-        margin-bottom: 10px;
-        font-size:20px;
-        font-family:Ruizi;
-        color:#333;
-    }
-    .gx_left_title a{
-        text-decoration:none;
-        color:#333;
-        font-family:Ruizi;
-        display:inline-block;
-        padding:5px;
-        background:#fff;
-        border:1px solid #999;
-        border-radius:5px;
-        margin-left:10px;
-        margin-top:10px;
-    }
-    .gx_left_lmk,.gx_left_sjs{
-        width:110px;
-        height:110px;
-        display:inline-block;
-        margin-left:30px;
-        text-align:center;
-        margin-top:200px;
-    }
-    .gx_left_lmk img,.gx_left_sjs img{
-        width:100%;
-        height:100%;
-        border-radius:50%;
-    }
-    .gx_clothes_1_img,.gx_clothes_2_img{
-        width:100%;
-        height:90%;
-        background:#fff;
-        margin-top:20px;
-    }
-   .gx_clothes_2_img img{
-        width:100%;
-    }
-    #gx_logo01{
-        width:70%;
-        height:10%;
-        margin-left:25px;
-    }
-    .gx_clothes_1 p,.gx_clothes_2 p,.gx_clothes_3 p,.gx_clothes_4 p,.gx_clothes_5 p,.gx_clothes_6 p{
-        text-align:center;
-        margin-top:8px;
-        font-family:Ruizi;
-        color:#333;
-        font-size:14px;
-    }
-    .gx_clothes_3_img{
-        width:100%;
-        height:82%;
-        background:#fff;
-        margin-top:20px;
-    }
-    /*青春流行*/
-    .qc_body{
-        width:100%;
-        height:36rem;
-        margin-top:10px;
-        display:flex;
-        justify-content:space-around;
-        background:#f1f1f1;
-    }
-    .qc_left,.qc_right{
-        width:3%;
-        height:100%;
-    }
-    .qc_clothes_1,.qc_clothes_2,.qc_clothes_3,.qc_clothes_4,.qc_clothes_5,.qc_clothes_6{
-        width:12%;
-        height:100%;
-    }
-    .qc_right_title{
-        width:16%;
-        height:100%;
-        margin-right:10px;
-        position:relative;
-    }
-    .qc_left_bj,.qc_right_bj{
-        width:30px;
-        height:60px;
-        background:rgba(0,0,0,0.3) url(../img/left.png) no-repeat 0px 15px;
-        background-size:30px 30px;
-        margin:220px auto;
-        border-radius:5px;
-    }
-    .qc_right_bj{
-        background:rgba(0,0,0,0.3) url(../img/right.png) no-repeat 0px 15px;
-        background-size:30px 30px;
-    }
-    .qc_clothes1_img{
-        width:100%;
-        height:90%;
-        margin-top:20px;
-        background:#fff;
-    }
-    .qc_clothes1_img img{
-        width:100%;
-    }
-    #qc_clothes1_logo{
-        width:50%;
-        height:10%;
-        margin-left:40px;
-    }
-    .qc_clothes_1 p,.qc_clothes_2 p,.qc_clothes_3 p,.qc_clothes_4 p,.qc_clothes_5 p,.qc_clothes_6 p{
-        text-align:center;
-        margin-top:8px;
-        font-family:Ruizi;
-        color:#333;
-        font-size:14px;
-    }
-    .qc_right_nav{
-        width:100%;
-        height:90%;
-        background:#fff;
-        margin-top:20px;
-    }
-    .qc_text{
-        padding:15px;
-    }
-    .qc_text h2{
-        margin-bottom:10px;
-        font-weight: normal;
-        font-family:Ruizi;
-        color:#333;
-    }
-    .qc_text a{
-        text-decoration:none;
-        color:#333;
-        font-family:Ruizi;
-        margin-left:10px;
-        margin-top:10px;
-        display:inline-block;
-    }
-    .qc_right_dpd,.qc_right_cb{
-        width:80px;
-        height:80px;
-        display:inline-block;
-        margin-top:120px;
-        margin-left:30px;
-        text-align: center;
-    }
-    .qc_right_dpd img,.qc_right_cb img{
-        width:100%;
-        border-radius:50%;
-    }
-    .qc_man{
-        position:absolute;
-        right:0px;
-    }
-    /*嘻哈潮流*/
-    .xh_body{
-        margin-top:10px;
-        height:31rem;
-        width:100%;
-        display:flex;
-        justify-content: space-between;
-    }
-    .xh_clothes_1{
-        width:32%;
-        height:100%;
-        position:relative;
-    }
-    .xh_clothes_1 img,.xh_clothes_2 img,.xh_clothes_3 img{
-        width:100%;
-        height:100%;
-    }
-    .xh_clothes_2{
-        width:28%;
-        height:100%;
-        position:relative;
-    }
-    .xh_clothes_3{
-        width:20%;
-        height:100%;
-        position:relative;
-    }
-    .xh_right{
-        width:15%;
-        height:100%;
-    }
-    .xh_right_title{
-        background:#5ad9cc;
-        height: 8rem;
-        text-align:center;
-        color:#fff;
-        font-family:Ruizi;
-    }
-    .xh_right_title:before{
-        content:"";
-        display:table;;
-    }
-    .xh_right_title h2{
-        color:#fff;
-        font-weight: normal;
-        margin-top:2rem;
-    }
-    .xh_right_title p{
-        margin-top:1rem;
-    }
-    .xh_right_img{
-        border:1px solid #f1f1f1;
-    }
-    .xh_right_img img{
-        width:72%;
-        height:72%;
-        margin-left:25px;
-    }
-    .xh_clothes_1_text{
-        position:absolute;
-        background:rgba(0,0,0,0.3);
-        bottom:0px;
-        color:#fff;
-        font-family:Ruizi;
-        padding:1rem;
-        text-align:center;
-        line-height:1.5rem;
-    }
-    /*底部信息*/
-    .footer{
-        width:100%;
-        height:500px;
-        background:#f1f1f1;
-        margin-top:50px;
-    }
-    .foot{
-        width:88%;
-        margin:0px auto;
-    }
-    .foot_body{
-        display:flex;
-
-    }
-    .foot_lx{
-        width:25%;
-        position:relative;
-        margin-top:20px;
-    }
-    .foot_rm{
-        width:100%;
-        margin-top:80px;
-        display:flex;
-        justify-content: space-between;
-    }
-    .foot_lx ul,.foot_rm ul{
-        list-style:none;
-    }
-    .foot_lx span{
-        display:inline-block;
-        font-family:Ruizi;
-        color:#666;
-    }
-    .foot_rm li{
-        margin-top:20px;
-    }
-    .foot_rm a{
-        margin-left:20px;
-        text-decoration: none;
-        color:#666;
-    }
-    .foot_nav{
-        width:50%;
-        height:100%;
-        display: flex;
-        justify-content:space-around;
-    }
-    .foot_tx{
-        width:25%;
-        height:100%;
-    }
-    .foot_tx_body{
-        margin-top:100px;
-        margin-left:50px;
-    }
-    .foot_search{
-        width:15rem;
-        border:0;
-        height:40px;
-        border-radius:10px;
-        padding-left:10px;
-        margin-top:20px;
-        margin-bottom:20px;
-        background:#fff url(../img/send.png) no-repeat 90%;
-        background-size:30px 30px;
-    }
-    .foot_tx_lx{
-        width:100%;
-        display: flex;
-        margin-top:20px;
-        justify-content:space-between;
-    }
-    .foot_gz img{
-        width:20px;
-        height:20px;
-        margin-top:10px;
-    }
-    .foot_code img{
-        width:150px;
-        height:150px;
-        display:inline-block;
-    }
-    .foot_hr{
-        margin-top:30px;
-        color:#666;
-    }
-    .foot_bq{
-        text-align:center;
-        margin-top:10px;
-    }
-    .dz{
-        position:absolute;
-        top:135px;
-    }
-    .phone{
-        position:absolute;
-        top:235px;
-    }
-    .email{
-        position:absolute;
-        top:335px;
-    }
+.gx_body{
+    margin-top:15px;
+    background:#f1f1f1;
+    width:100%;
+    height:580px;
+    display:flex;
+    justify-content: space-around;
 }
-/* 1440px */
-@media screen and (min-width:1440px) and (max-width:1727px){
-    .container{
-        width: 88%;
-        margin:0px auto;
-    }
-    /* 头部样式 */
-    .head_body{
-        width:100%;
-        height:8rem;
-        display: flex;
-        justify-content:space-between;
-    }
-    .head_logo{
-        width:235px;
-        height:100px;
-        margin-top:10px;
-    }
-    .head_nav>ul{
-        line-height:8rem;
-        list-style: none;
-    }
-    .head_user ul{
-        list-style:none;
-        margin-top:50px;
-    }
-    .head_nav>ul>li,.head_user li{
-        float:left;
-        margin-left:15px;
-    }
-    .head_nav a{
-        font-size:16px;
-        text-decoration:none;
-        color:#666;
-        font-family: 'Ruizi';      
-    }
-    .head_search input{
-        width:15rem;
-        height:2rem;
-        border:0;
-        border-radius:5px;
-        padding-left:12px;
-        margin-left:1rem;
-        margin-top:3rem;
-        background:#f1f1f1 url('../img/search.png') no-repeat 13rem 4px;
-        background-size:25px 25px;
-    }
-    .head_user img{
-        width:27px;
-        height:27px;
-    }
-    #head_x1,#head_x2{
-        width:1px;
-        height:27px;
-    }
-    #head_navbtn{
-        margin-left:10px;
-        width:35px;
-        height:35px;
-    }
-    /* banner样式 */
-    .banner_img{
-        width:100%;
-        height:600px;
-    }
-    .banner_img img{
-        width:100%;
-        display: none;
-    }
-    .banner_img img:first-child{
-        display:block;
-    }
-    /*原创设计*/
-    .yc_title span:first-child,.gx_title span:first-child,.qc_title span:first-child,.xh_title span:first-child{
-        font-family: Ruizi;
-        font-size:24px;
-        color:#333;
-    }
-    .yc_title span:last-child,.gx_title span:last-child,.qc_title span:last-child,.xh_title span:last-child{
-        font-family:Ruizi;
-        font-size:18px;
-        color:#e1e1e1;
-        margin-left:5px;
-    }
-    .yc{
-        margin-top:0rem;
-    }
-    .yc_body{
-        width:100%;
-        height:500px;
-        margin-top:10px;
-        display:flex;
-        justify-content:space-between;
-    }
-    .yc_left{
-        width:15%;
-    }
-    .yc_left_title:before{
-        content: "";
-        display:table;
-    }
-    .yc_left_title{
-        background:#5ad9cc;
-        height: 8rem;
-    }
-    .yc_left_title h2,.yc_left_title p{
-        color:#fff;
-        text-align:center;
-        font-family:Ruizi;
-        margin-top:1rem;
-    }
-    .yc_left_title h2{
-        margin-top:2rem;
-    }
-    .yc_left_img{
-        border:1px solid #f1f1f1;
-    }
-    .yc_left_img img{
-        width:83%;
-        height:83%;
-        margin-left:1rem;
-    }
-    .yc_middle1{
-        width:33%;
-        height:31rem;
-        position:relative;
-    }
-    .yc_middle1 img,.yc_middle2 img{
-        width:100%;
-        height:100%;
-    }
-    .yc_middle1_des{
-        width:100%;
-        height:100px;
-        position:absolute;
-        background:rgba(0,0,0,0.3);
-        bottom: 1px;
-        color:#fff;
-        text-align:center;
-        line-height:100px;
-        font-family:Ruizi;
-    }
-    .yc_middle1_logo,.yc_middle2_logo{
-        width:120px;
-        height:120px;
-        background:#fff;
-        border-radius:50%;
-        position:absolute;
-        top:330px;
-        left:20px;
-        z-index: 2;
-    }
-    .yc_middle2{
-        width:28%;
-        height:31rem;
-        position:relative;
-    }
-    .yc_right{
-        width:20%;
-        height:31rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position:relative;
-    }
-    .yc_right_1,.yc_right_2{
-        width:100%;
-        height:49%;
-        position:relative;
-    }
-    .yc_right img{
-        width:100%;
-        height:100%;
-    }
-    .yc_right_des{
-        position:absolute;
-        bottom: 1px;
-        background:rgba(0,0,0,0.3);
-        width:100%;
-        height:50px;
-        color: #ffffff;
-        text-align: center;
-        line-height:50px;
-    }
-    .yc_right_logo1,.yc_right_logo2{
-        width:100px;
-        height:100px;
-        background:#fff;
-        border-radius:50%;
-        position:absolute;
-        top:110px;
-        left:20px;
-        z-index: 2;
-    }
-    /*个性风潮*/
-    .gx,.qc,.xh{
-        margin-top:30px;
-    }
-    .gx_body{
-        margin-top:10px;
-        background:#f1f1f1;
-        width:100%;
-        height:500px;
-        display:flex;
-        justify-content: space-around;
-    }
-    .gx_left_nav{
-        width:20%;
-        height:100%;
-    }
-    .gx_clothes_1,.gx_clothes_2,.gx_clothes_3,.gx_clothes_4,.gx_clothes_5,.gx_clothes_6{
-        width:12%;
-        height:100%;
-    }
-    .gx_clothes_3{
-        margin:0px 15px;
-    }
-    .gx_left_title{
-        margin-top:40px;
-        padding:10px;
-        margin-left:10px;
-    }
-    .gx_left_title p{
-        margin-bottom: 10px;
-        font-size:20px;
-        font-family:Ruizi;
-        color:#333;
-    }
-    .gx_left_title a{
-        text-decoration:none;
-        color:#333;
-        font-family:Ruizi;
-        display:inline-block;
-        padding:5px;
-        background:#fff;
-        border:1px solid #999;
-        border-radius:5px;
-        margin-left:10px;
-        margin-top:10px;
-    }
-    .gx_left_lmk,.gx_left_sjs{
-        width:110px;
-        height:110px;
-        display:inline-block;
-        margin-left:11px;
-        text-align:center;
-        margin-top:100px;
-    }
-    .gx_left_lmk img,.gx_left_sjs img{
-        width:100%;
-        height:100%;
-        border-radius:50%;
-    }
-    .gx_clothes_1_img,.gx_clothes_2_img{
-        width:100%;
-        height:90%;
-        background:#fff;
-        margin-top:20px;
-    }
-   .gx_clothes_2_img img{
-        width:100%;
-    }
-    #gx_logo01{
-        width:70%;
-        height:10%;
-        margin-left:25px;
-    }
-    .gx_clothes_1 p,.gx_clothes_2 p,.gx_clothes_3 p,.gx_clothes_4 p,.gx_clothes_5 p,.gx_clothes_6 p{
-        text-align:center;
-        margin-top:8px;
-        font-family:Ruizi;
-        color:#333;
-        font-size:14px;
-    }
-    .gx_clothes_3_img{
-        width:100%;
-        height:82%;
-        background:#fff;
-        margin-top:20px;
-    }
-    /*青春流行*/
-    .qc_body{
-        width:100%;
-        height:500px;
-        margin-top:10px;
-        display:flex;
-        justify-content:space-around;
-        background:#f1f1f1;
-    }
-    .qc_left,.qc_right{
-        width:3%;
-        height:100%;
-    }
-    .qc_clothes_1,.qc_clothes_2,.qc_clothes_3,.qc_clothes_4,.qc_clothes_5,.qc_clothes_6{
-        width:12%;
-        height:100%;
-    }
-    .qc_right_title{
-        width:16%;
-        height:100%;
-        margin-right:10px;
-        position:relative;
-    }
-    .qc_left_bj,.qc_right_bj{
-        width:30px;
-        height:60px;
-        background:rgba(0,0,0,0.3) url(../img/left.png) no-repeat 0px 15px;
-        background-size:30px 30px;
-        margin:220px auto;
-        border-radius:5px;
-    }
-    .qc_right_bj{
-        background:rgba(0,0,0,0.3) url(../img/right.png) no-repeat 0px 15px;
-        background-size:30px 30px;
-    }
-    .qc_clothes1_img{
-        width:100%;
-        height:90%;
-        margin-top:20px;
-        background:#fff;
-    }
-    .qc_clothes1_img img{
-        width:100%;
-    }
-    #qc_clothes1_logo{
-        width:50%;
-        height:10%;
-        margin-left:40px;
-    }
-    .qc_clothes_1 p,.qc_clothes_2 p,.qc_clothes_3 p,.qc_clothes_4 p,.qc_clothes_5 p,.qc_clothes_6 p{
-        text-align:center;
-        margin-top:8px;
-        font-family:Ruizi;
-        color:#333;
-        font-size:14px;
-    }
-    .qc_right_nav{
-        width:100%;
-        height:90%;
-        background:#fff;
-        margin-top:20px;
-    }
-    .qc_text{
-        padding:15px;
-    }
-    .qc_text h2{
-        margin-bottom:10px;
-        font-weight: normal;
-        font-family:Ruizi;
-        color:#333;
-    }
-    .qc_text a{
-        text-decoration:none;
-        color:#333;
-        font-family:Ruizi;
-        margin-left:10px;
-        margin-top:10px;
-        display:inline-block;
-    }
-    .qc_right_dpd,.qc_right_cb{
-        width:80px;
-        height:80px;
-        background:#fff;
-        display:inline-block;
-        margin-top:70px;
-        margin-left:15px;
-        text-align: center;
-    }
-    .qc_right_dpd img,.qc_right_cb img{
-        width:100%;
-        border-radius:50%;
-    }
-    .qc_man{
-        position:absolute;
-        right:0px;
-    }
-    /*嘻哈潮流*/
-    .xh_body{
-        margin-top:10px;
-        height:450px;
-        width:100%;
-        display:flex;
-        justify-content: space-between;
-    }
-    .xh_clothes_1{
-        width:32%;
-        height:100%;
-        position:relative;
-    }
-    .xh_clothes_1 img,.xh_clothes_2 img,.xh_clothes_3 img{
-        width:100%;
-        height:100%;
-    }
-    .xh_clothes_2{
-        width:28%;
-        height:100%;
-        position:relative;
-    }
-    .xh_clothes_3{
-        width:20%;
-        height:100%;
-        position:relative;
-    }
-    .xh_right{
-        width:15%;
-        height:100%;
-    }
-    .xh_right_title{
-        background:#5ad9cc;
-        height: 8rem;
-        text-align:center;
-        color:#fff;
-        font-family:Ruizi;
-    }
-    .xh_right_title:before{
-        content:"";
-        display:table;;
-    }
-    .xh_right_title h2{
-        color:#fff;
-        font-weight: normal;
-        margin-top:2rem;
-    }
-    .xh_right_title p{
-        margin-top:1rem;
-    }
-    .xh_right_img{
-        border:1px solid #f1f1f1;
-    }
-    .xh_right_img img{
-        width:72%;
-        height:72%;
-        margin-left:25px;
-    }
-    .xh_clothes_1_text{
-        position:absolute;
-        background:rgba(0,0,0,0.3);
-        bottom:0px;
-        color:#fff;
-        font-family:Ruizi;
-        padding:1rem;
-        text-align:center;
-        line-height:1.5rem;
-    }
-    /*底部信息*/
-    .footer{
-        width:100%;
-        height:500px;
-        background:#f1f1f1;
-        margin-top:50px;
-    }
-    .foot{
-        width:88%;
-        margin:0px auto;
-    }
-    .foot_body{
-        display:flex;
-
-    }
-    .foot_lx{
-        width:25%;
-        position:relative;
-        margin-top:20px;
-    }
-    .foot_rm{
-        width:100%;
-        margin-top:80px;
-        display:flex;
-        justify-content: space-between;
-    }
-    .foot_lx ul,.foot_rm ul{
-        list-style:none;
-    }
-    .foot_lx span{
-        display:inline-block;
-        font-family:Ruizi;
-        color:#666;
-    }
-    .foot_rm li{
-        margin-top:20px;
-    }
-    .foot_rm a{
-        margin-left:20px;
-        text-decoration: none;
-        color:#666;
-    }
-    .foot_nav{
-        width:50%;
-        height:100%;
-        display: flex;
-        justify-content:space-around;
-    }
-    .foot_tx{
-        width:25%;
-        height:100%;
-    }
-    .foot_tx_body{
-        margin-top:100px;
-        margin-left:50px;
-    }
-    .foot_search{
-        width:15rem;
-        border:0;
-        height:40px;
-        border-radius:10px;
-        padding-left:10px;
-        margin-top:20px;
-        margin-bottom:20px;
-        background:#fff url(../img/send.png) no-repeat 90%;
-        background-size:30px 30px;
-    }
-    .foot_tx_lx{
-        width:100%;
-        display: flex;
-        margin-top:20px;
-        justify-content:space-between;
-    }
-    .foot_gz img{
-        width:20px;
-        height:20px;
-        margin-top:10px;
-    }
-    .foot_code img{
-        width:150px;
-        height:150px;
-        display:inline-block;
-    }
-    .foot_hr{
-        margin-top:30px;
-        color:#666;
-    }
-    .foot_bq{
-        text-align:center;
-        margin-top:10px;
-    }
-    .dz{
-        position:absolute;
-        top:135px;
-    }
-    .phone{
-        position:absolute;
-        top:235px;
-    }
-    .email{
-        position:absolute;
-        top:335px;
-    }
+.gx_left_nav{
+    width:20%;
+    height:100%;
 }
-/* 960px */
-@media screen and (min-width:960px) and (max-width:1439px){
-    .container{
-        width: 88%;
-        margin:0px auto;
-    }
-    /* 头部样式 */
-    .head_body{
-        width:100%;
-        height:8rem;
-        display: flex;
-        justify-content:space-between;
-    }
-    .head_logo{
-        width:235px;
-        height:100px;
-        margin-top:10px;
-    }
-    .head_nav>ul{
-        line-height:8rem;
-        list-style: none;
-        display: none;
-    }
-    .head_user ul{
-        list-style:none;
-        margin-top:50px;
-    }
-    .head_nav>ul>li,.head_user li{
-        float:left;
-        margin-left:15px;
-    }
-    .head_nav a{
-        font-size:16px;
-        text-decoration:none;
-        color:#666;
-        font-family: 'Ruizi';      
-    }
-    .head_search input{
-        width:22rem;
-        height:2rem;
-        border:0;
-        border-radius:5px;
-        padding-left:12px;
-        margin-left:0rem;
-        margin-top:3rem;
-        background:#f1f1f1 url('../img/search.png') no-repeat 20rem 4px;
-        background-size:25px 25px;
-    }
-    .head_user img{
-        width:27px;
-        height:27px;
-    }
-    #head_x1,#head_x2{
-        width:1px;
-        height:27px;
-    }
-    #head_navbtn{
-        margin-left:10px;
-        width:35px;
-        height:35px;
-    }
-    /* banner样式 */
-    .banner_img{
-        width:100%;
-        height:100%;
-    }
-    .banner_img img{
-        width:100%;
-        display: none;
-    }
-    .banner_img img:first-child{
-        display:block;
-    }
-    /*原创设计*/
-    .yc_title span:first-child,.gx_title span:first-child,.qc_title span:first-child,.xh_title span:first-child{
-        font-family: Ruizi;
-        font-size:24px;
-        color:#333;
-    }
-    .yc_title span:last-child,.gx_title span:last-child,.qc_title span:last-child,.xh_title span:last-child{
-        font-family:Ruizi;
-        font-size:18px;
-        color:#e1e1e1;
-        margin-left:5px;
-    }
-    .yc{
-       margin-top:2rem;
-    }
-    .yc_body{
-        width:100%;
-        height:20rem;
-        margin-top:10px;
-        display:flex;
-        justify-content:space-between;
-    }
-    .yc_left{
-        width:15%;
-        height:19rem;
-    }
-    .yc_left_title:before{
-        content: "";
-        display:table;
-    }
-    .yc_left_title{
-        background:#5ad9cc;
-        height: 6rem;
-    }
-    .yc_left_title h2,.yc_left_title p{
-        color:#fff;
-        text-align:center;
-        font-family:Ruizi;
-        margin-top:1rem;
-        font-size:0.75rem;
-    }
-    .yc_left_title h2{
-        font-size:1.25rem;
-        margin-top:1.25rem;
-    }
-    .yc_left_img{
-        border:1px solid #f1f1f1;
-    }
-    .yc_left_img img{
-        width:73%;
-        height:73%;
-        margin-left:1rem;
-    }
-    .yc_middle1{
-        width:33%;
-        height:19rem;
-        position:relative;
-    }
-    .yc_middle1 img,.yc_middle2 img{
-        width:100%;
-        height:100%;
-    }
-    .yc_middle1_des{
-        width:100%;
-        height:65px;
-        position:absolute;
-        background:rgba(0,0,0,0.3);
-        bottom: 1px;
-        color:#fff;
-        text-align:center;
-        line-height:65px;
-        font-family:Ruizi;
-    }
-    .yc_middle1_logo,.yc_middle2_logo{
-        width:80px;
-        height:80px;
-        background:#fff;
-        border-radius:50%;
-        position:absolute;
-        top:180px;
-        left:20px;
-        z-index: 2;
-    }
-    .yc_middle2{
-        width:28%;
-        height:19rem;
-        position:relative;
-    }
-    .yc_right{
-        width:20%;
-        height:19rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position:relative;
-    }
-    .yc_right_1,.yc_right_2{
-        width:100%;
-        height:49%;
-        position:relative;
-    }
-    .yc_right img{
-        width:100%;
-        height:100%;
-    }
-    .yc_right_des{
-        position:absolute;
-        bottom: 1px;
-        background:rgba(0,0,0,0.3);
-        width:100%;
-        height:50px;
-        color: #ffffff;
-        text-align: center;
-        line-height:50px;
-    }
-    .yc_right_logo1,.yc_right_logo2{
-        width:50px;
-        height:50px;
-        background:#fff;
-        border-radius:50%;
-        position:absolute;
-        top:70px;
-        left:20px;
-        z-index: 2;
-    }
-    /*个性风潮*/
-    .gx,.qc,.xh{
-        margin-top:30px;
-    }
-    .gx_body{
-        margin-top:10px;
-        background:#f1f1f1;
-        width:100%;
-        height:20rem;
-        display:flex;
-        justify-content: space-around;
-    }
-    .gx_left_nav{
-        width:20%;
-        height:100%;
-    }
-    .gx_clothes_1,.gx_clothes_2,.gx_clothes_3,.gx_clothes_4,.gx_clothes_5,.gx_clothes_6{
-        width:12%;
-        height:100%;
-    }
-    .gx_clothes_3{
-        margin:0px 15px;
-    }
-    .gx_left_title{
-        margin-top:40px;
-        padding:10px;
-        margin-left:10px;
-    }
-    .gx_left_title p{
-        margin-bottom: 10px;
-        font-size:20px;
-        font-family:Ruizi;
-        color:#333;
-    }
-    .gx_left_title a{
-        text-decoration:none;
-        color:#333;
-        font-family:Ruizi;
-        display:inline-block;
-        padding:2px;
-        background:#fff;
-        border:1px solid #999;
-        border-radius:5px;
-        margin-left:3px;
-        margin-top:10px;
-        font-size:10px;
-    }
-    .gx_left_lmk,.gx_left_sjs{
-        width:50px;
-        height:50px;
-        display:inline-block;
-        margin-left:20px;
-        text-align:center;
-        margin-top:50px;
-    }
-    .gx_left_lmk p,.gx_left_sjs p{
-        font-size:10px;
-    }
-    .gx_left_lmk img,.gx_left_sjs img{
-        width:100%;
-        height:100%;
-        border-radius:50%;
-    }
-    .gx_clothes_1_img,.gx_clothes_2_img{
-        width:100%;
-        height:90%;
-        background:#fff;
-        margin-top:20px;
-    }
-   .gx_clothes_2_img img{
-        width:100%;
-    }
-    #gx_logo01{
-        width:70%;
-        height:10%;
-        margin-left:15px;
-    }
-    .gx_clothes_1 p,.gx_clothes_2 p,.gx_clothes_3 p,.gx_clothes_4 p,.gx_clothes_5 p,.gx_clothes_6 p{
-        display:none;
-    }
-    .gx_clothes_3_img{
-        width:100%;
-        height:82%;
-        background:#fff;
-        margin-top:20px;
-    }
-    .gx_clothes_3_img img{
-        width:100%;
-        height:100%;
-    }
-    /*青春流行*/
-    .qc_body{
-        width:100%;
-        height:20rem;
-        margin-top:10px;
-        display:flex;
-        justify-content:space-around;
-        background:#f1f1f1;
-    }
-    .qc_left,.qc_right{
-        width:3%;
-        height:100%;
-    }
-    .qc_clothes_1,.qc_clothes_2,.qc_clothes_3,.qc_clothes_4,.qc_clothes_5,.qc_clothes_6{
-        width:12%;
-        height:100%;
-    }
-    .qc_right_title{
-        width:16%;
-        height:100%;
-        margin-right:10px;
-        position:relative;
-    }
-    .qc_left_bj,.qc_right_bj{
-        width:15px;
-        height:30px;
-        background:rgba(0,0,0,0.3) url(../img/left.png) no-repeat 0px 8px;
-        background-size:15px 15px;
-        margin:140px auto;
-        border-radius:5px;
-    }
-    .qc_right_bj{
-        background:rgba(0,0,0,0.3) url(../img/right.png) no-repeat 0px 8px;
-        background-size:15px 15px;
-    }
-    .qc_clothes1_img{
-        width:100%;
-        height:90%;
-        margin-top:20px;
-        background:#fff;
-    }
-    .qc_clothes1_img img{
-        width:100%;
-    }
-    #qc_clothes1_logo{
-        width:50%;
-        height:10%;
-        margin-left:25px;
-    }
-    .qc_clothes_1 p,.qc_clothes_2 p,.qc_clothes_3 p,.qc_clothes_4 p,.qc_clothes_5 p,.qc_clothes_6 p{
-        display:none;
-    }
-    .qc_right_nav{
-        width:100%;
-        height:90%;
-        background:#fff;
-        margin-top:20px;
-    }
-    .qc_text{
-        padding:15px;
-    }
-    .qc_text img{
-        width:70%;
-        height:70%;
-    }
-    .qc_text h2{
-        margin-bottom:10px;
-        font-weight: normal;
-        font-family:Ruizi;
-        color:#333;
-        font-size:16px;
-    }
-    .qc_text a{
-        text-decoration:none;
-        color:#333;
-        font-family:Ruizi;
-        margin-top:10px;
-        display:inline-block;
-        font-size:10px;
-    }
-    .qc_right_dpd,.qc_right_cb{
-        width:40px;
-        height:40px;
-        background:#fff;
-        display:inline-block;
-        margin-left:15px;
-        text-align: center;
-    }
-    .qc_right_dpd p,.qc_right_cb p{
-        font-size:10px;
-    }
-    .qc_right_dpd img,.qc_right_cb img{
-        width:100%;
-        border-radius:50%;
-    }
-    .qc_man{
-        position:absolute;
-        top:-15px;
-        right:-15px;
-        width:50%;
-        height:40%;
-    }
-    /*嘻哈潮流*/
-    .xh_body{
-        margin-top:10px;
-        height:17rem;
-        width:100%;
-        display:flex;
-        justify-content: space-between;
-    }
-    .xh_clothes_1{
-        width:32%;
-        height:100%;
-        position:relative;
-    }
-    .xh_clothes_1 img,.xh_clothes_2 img,.xh_clothes_3 img{
-        width:100%;
-        height:100%;
-    }
-    .xh_clothes_2{
-        width:28%;
-        height:100%;
-        position:relative;
-    }
-    .xh_clothes_3{
-        width:20%;
-        height:100%;
-        position:relative;
-    }
-    .xh_right{
-        width:15%;
-        height:17rem;
-    }
-    .xh_right_title{
-        background:#5ad9cc;
-        height: 6rem;
-        text-align:center;
-        color:#fff;
-        font-family:Ruizi;
-    }
-    .xh_right_title:before{
-        content:"";
-        display:table;;
-    }
-    .xh_right_title h2{
-        color:#fff;
-        font-weight: normal;
-        margin-top:1.25rem;
-        font-size:1rem;
-    }
-    .xh_right_title p{
-        margin-top:1rem;
-        font-size:0.75rem;
-    }
-    .xh_right_img{
-        border:1px solid #f1f1f1;
-        text-align: center;
-    }
-    .xh_right_img img{
-        width:60%;
-        height:60%;
-       
-    }
-    .xh_clothes_1_text{
-        position:absolute;
-        background:rgba(0,0,0,0.3);
-        bottom:0px;
-        color:#fff;
-        font-family:Ruizi;
-        padding:1rem;
-        text-align:center;
-        line-height:1.5rem;
-        font-size:10px;
-    }
-    /*底部信息*/
-    .footer{
-        width:100%;
-        height:26rem;
-        background:#f1f1f1;
-        margin-top:50px;
-    }
-    .foot{
-        width:88%;
-        margin:0px auto;
-    }
-    .foot_body{
-        display:flex;
-
-    }
-    .foot_lx{
-        width:25%;
-        position:relative;
-        margin-top:20px;
-    }
-    .foot_lx  img{
-        width:35%;
-        height:35%;
-        margin-top:4px;
-        margin-right:5px;
-    }
-    .foot_lx ul li:first-child img{
-        width:80%;
-        height:80%;
-    }
-    .foot_rm{
-        width:100%;
-        margin-top:80px;
-        display:flex;
-        justify-content: space-between;
-    }
-    .foot_lx ul,.foot_rm ul{
-        font-size:10px;
-        list-style:none;
-    }
-    .foot_rm ul li:first-child {
-        font-size:16px;
-    }
-    .foot_lx span{
-        display:inline-block;
-        font-family:Ruizi;
-        color:#666;
-        font-size:10px;
-    }
-    .foot_rm li{
-        margin-top:20px;
-    }
-    .foot_rm a{
-        margin-left:20px;
-        text-decoration: none;
-        color:#666;
-    }
-    .foot_nav{
-        width:50%;
-        height:100%;
-        display: flex;
-        justify-content:space-around;
-        margin-left:15px;
-    }
-    .foot_tx{
-        width:25%;
-        height:100%;
-    }
-    .foot_tx_body{
-        margin-top:100px;
-        margin-left:50px;
-    }
-    .foot_tx_body p:nth-child(3){
-        font-size:10px;
-    }
-    .foot_search{
-        width:9rem;
-        border:0;
-        height:40px;
-        border-radius:10px;
-        padding-left:10px;
-        margin-top:20px;
-        margin-bottom:20px;
-        background:#fff url(../img/send.png) no-repeat 94%;
-        background-size:30px 30px;
-        font-size:10px;
-    }
-    .foot_tx_lx{
-        width:100%;
-        display: flex;
-        margin-top:20px;
-        justify-content:space-between;
-    }
-    .foot_gz,.foot_code{
-        width:50%;
-    }
-    .foot_gz img{
-        width:15px;
-        height:15px;
-        margin-top:10px;
-    }
-    .foot_code img{
-        width:80px;
-        height:80px;
-        display:inline-block;
-    }
-    .foot_hr{
-        margin-top:30px;
-        color:#666;
-    }
-    .foot_bq{
-        text-align:center;
-        margin-top:10px;
-    }
-    .dz{
-        position:absolute;
-        top:110px;
-    }
-    .phone{
-        position:absolute;
-        top:190px;
-    }
-    .email{
-        position:absolute;
-        top:270px;
-    }
+.gx_clothes_1,.gx_clothes_2,.gx_clothes_3,.gx_clothes_4,.gx_clothes_5,.gx_clothes_6{
+    width:12%;
+    height:100%;
 }
-/* 768px */
-/* @media screen and (min-width:768px) and (max-width:1279px){
-    .container{
-        width: 88%;
-        margin:0px auto;
-        background:#aaf;
-    }
-} */
-/* 767px */
-/* @media screen and (max-width:767px){
-    .container{
-        width: 88%;
-        margin:0px auto;
-        background:#afa;
-    }
-} */
+.gx_clothes_3{
+    margin:0px 15px;
+}
+.gx_left_title{
+    margin-top:40px;
+    padding:10px;
+    margin-left:10px;
+}
+.gx_left_title p{
+    margin-bottom: 10px;
+    font-size:20px;
+    font-family:Ruizi;
+    color:#333;
+}
+.gx_left_title a{
+    text-decoration:none;
+    color:#333;
+    font-family:Ruizi;
+    display:inline-block;
+    padding:5px;
+    background:#fff;
+    border:1px solid #999;
+    border-radius:5px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.gx_left_lmk,.gx_left_sjs{
+    width:90px;
+    height:90px;
+    display:inline-block;
+    margin-left:30px;
+    text-align:center;
+    margin-top:200px;
+}
+.gx_left_lmk img,.gx_left_sjs img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+.gx_clothes_1_img,.gx_clothes_2_img{
+    width:100%;
+    margin-top:20px;
+}
+.gx_clothes_2_img img{
+    width:100%;
+}
+.gx_logo01{
+    width:100%;
+    height:80px;
+    background:#fff;
+    text-align: center;
+}
+.gx_logo01>img{
+    width:70%;
+    margin-top:4px;
+}
+.gx_clothes_1 p,.gx_clothes_2 p,.gx_clothes_3 p,.gx_clothes_4 p,.gx_clothes_5 p,.gx_clothes_6 p{
+    text-align:center;
+    margin-top:10px;
+    font-family:Ruizi;
+    color:#333;
+    font-size:16px;
+}
+.gx_clothes_3_img{
+    width:100%;
+    height:82%;
+    background:#fff;
+    margin-top:20px;
+}
+/*青春流行*/
+.qc{
+    width:1440px;
+    margin:0px auto;
+    height:620px;
+}
+.qc_body{
+    width:100%;
+    margin-top:10px;
+    display:flex;
+    justify-content:space-around;
+    background:#f1f1f1;
+    height:580px;
+}
+.qc_left,.qc_right{
+    width:3%;
+    height:100%;
+}
+.qc_clothes_1,.qc_clothes_2,.qc_clothes_3,.qc_clothes_4,.qc_clothes_5,.qc_clothes_6{
+    width:12%;
+    height:100%;
+}
+.qc_right_title{
+    width:16%;
+    height:100%;
+    margin-right:10px;
+    position:relative;
+}
+.qc_left_bj,.qc_right_bj{
+    width:30px;
+    height:60px;
+    background:rgba(0,0,0,0.3) url(../img/left.png) no-repeat 0px 15px;
+    background-size:30px 30px;
+    margin:220px auto;
+    border-radius:5px;
+}
+.qc_right_bj{
+    background:rgba(0,0,0,0.3) url(../img/right.png) no-repeat 0px 15px;
+    background-size:30px 30px;
+}
+.qc_clothes1_img{
+    width:100%;
+    margin-top:20px;
+    background:#fff;
+}
+.qc_clothes1_img img{
+    width:100%;
+}
+.qc_clothes1_logo{
+    width:100%;
+    height:80px;
+    background:#fff;
+    text-align: center;
+}
+.qc_clothes1_logo img{
+    width:70%;
+    margin-top:4px;
+}
+.qc_clothes_1 p,.qc_clothes_2 p,.qc_clothes_3 p,.qc_clothes_4 p,.qc_clothes_5 p,.qc_clothes_6 p{
+    text-align:center;
+    margin-top:10px;
+    font-family:Ruizi;
+    color:#333;
+    font-size:16px;
+}
+.qc_right_nav{
+    width:100%;
+    height:500px;
+    background:#fff;
+    margin-top:20px;
+}
+.qc_text{
+    padding:15px;
+}
+.qc_text h2{
+    margin-bottom:10px;
+    font-weight: normal;
+    font-family:Ruizi;
+    color:#333
+}
+.qc_text a{
+    text-decoration:none;
+    color:#333;
+    font-family:Ruizi;
+    margin-left:10px;
+    margin-top:10px;
+    display:inline-block;
+}
+.qc_right_dpd,.qc_right_cb{
+    width:80px;
+    height:80px;
+    background:#fff;
+    display:inline-block;
+    margin-top:120px;
+    margin-left:20px;
+    text-align: center;
+}
+.qc_right_dpd img,.qc_right_cb img{
+    width:100%;
+    border-radius:50%;
+}
+.qc_man{
+    position:absolute;
+    right:0px;
+}
+/*嘻哈潮流*/
+.xh{
+    width:1440px;
+    margin:0px auto;
+    height:550px;
+}
+.xh_body{
+    margin-top:10px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.xh_clothes_1{
+    width:32%;
+    position:relative;
+}
+.xh_clothes_1 img,.xh_clothes_2 img,.xh_clothes_3 img{
+    width:100%;
+    height:100%;
+}
+.xh_clothes_2{
+    width:28%;
+    position:relative;
+}
+.xh_clothes_3{
+    width:20%;
+    position:relative;
+}
+.xh_right{
+    width:15%;
+}
+.xh_right_title{
+    background:#5ad9cc;
+    height: 130px;
+    text-align:center;
+    color:#fff;
+    font-family:Ruizi;
+}
+.xh_right_title:before{
+    content:"";
+    display:table;;
+}
+.xh_right_title h2{
+    color:#fff;
+    font-weight: normal;
+    margin-top:2rem;
+}
+.xh_right_title p{
+    margin-top:1rem;
+}
+.xh_right_img{
+    border:1px solid #f1f1f1;
+    text-align: center;
+}
+.xh_right_img img{
+    width:74%;
+    height:74%;
+}
+.xh_clothes_1_text{
+    position:absolute;
+    background:rgba(0,0,0,0.3);
+    bottom:0px;
+    color:#fff;
+    font-family:Ruizi;
+    padding:1rem;
+    text-align:center;
+    line-height:1.5rem;
+}
+/*底部信息*/
+.footer{
+    width:100%;
+    height:500px;
+    background:#f1f1f1;
+    margin-top:50px;
+}
+.foot{
+    width:1440px;
+    margin:0px auto;
+}
+.foot_body{
+    display:flex;
+
+}
+.foot_lx{
+    width:25%;
+    position:relative;
+    margin-top:20px;
+}
+.foot_rm{
+    width:100%;
+    margin-top:80px;
+    display:flex;
+    justify-content: space-around;
+}
+.foot_lx ul,.foot_rm ul{
+    list-style:none;
+}
+.foot_lx span{
+    display:inline-block;
+    font-family:Ruizi;
+    color:#666;
+    margin-left:10px;
+    font-size:18px;
+}
+.foot_rm li{
+    margin-top:20px;
+}
+.foot_rm a{
+    margin-left:20px;
+    text-decoration: none;
+    color:#666;
+}
+.foot_nav{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content:space-around;
+}
+.foot_tx{
+    width:25%;
+    height:100%;
+}
+.foot_tx_body{
+    margin-top:100px;
+    margin-left:50px;
+}
+.foot_search{
+    width:15rem;
+    border:0;
+    height:40px;
+    border-radius:10px;
+    padding-left:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+    background:#fff url(../img/send.png) no-repeat 90%;
+    background-size:30px 30px;
+}
+.foot_tx_lx{
+    width:100%;
+    display: flex;
+    margin-top:20px;
+    justify-content:space-between;
+}
+.foot_gz,.foot_code{
+    width:50%;
+}
+.foot_gz img{
+    width:30px;
+    height:30px;
+    margin-top:10px;
+}
+.foot_gz p{
+    font-size:20px;
+}
+.foot_code img{
+    width:150px;
+    height:150px;
+    display:inline-block;
+}
+.foot_hr{
+    margin-top:30px;
+    color:#666;
+}
+.foot_bq{
+    text-align:center;
+    margin-top:10px;
+}
+.dz{
+    position:absolute;
+    top:135px;
+}
+.phone{
+    position:absolute;
+    top:235px;
+}
+.email{
+    position:absolute;
+    top:335px;
+}
