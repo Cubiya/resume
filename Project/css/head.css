@@ -14,12 +14,6 @@ body::before{
     display: flex; 
     margin:0 auto;
 }
-.head_bj{
-    width:100%;
-    background-color:rgba(0,0,0,0.3);
-    position: absolute;
-    z-index: 10;
-}
 .head_logo{
     width:235px;
     height:100px;
@@ -48,12 +42,11 @@ body::before{
 }
 .head_nav>ul>li,.head_user li{
     float:left;
-    
 }
 .head_nav a{
     font-size:16px;
     text-decoration:none;
-    color:#fff;
+    color:#333;
     font-family: 'Ruizi';
 }
 .head_search input{
@@ -75,74 +68,42 @@ body::before{
     width:1px;
     height:27px;
 }
-#head_navbtn{
+#headnav{
     margin-left:10px;
     width:35px;
     height:35px;
 }
-/* banner样式 */
-.banner{
-    position: absolute;
-}
-/* 登陆样式 */
-.login{
-    width:1200px;;
-    margin:200px auto;
-    position:relative;   
-}
-.login_bj{
-    width:350px;
-    height:450px;
-    background:#fff;
-    border-radius:10px;
+.nav{
+    width:300px;
+    height:100%;
+    background:#fafafa;
+    position:fixed;
+    right:0;
     padding:20px;
-    align-items: flex-end;
-    float:right;
+    display:none;
+    transition:all 2s;
 }
-.login_head,.login_user{
-    margin-top:30px;
-}
-.login_head span:first-child{
-    color:#000;
-    font-weight: bold;
-    font-size:20px;
-}
-.login_head span:last-child{
-    color:#297bf8;
-    font-size:20px;
-    margin-left:90px;
-}
-.login_user input{
-    width:95%;
-    height:4rem;
-    border-radius:5px;
-    outline:none;
-    padding-left:5%;
-    font-size:1rem;
-    margin-top:10px;
-    border:1px solid #f2f2f2;
-}
-.login_auto input{
-    margin-top:20px;
-    width:20px;
-    height:20px;
-}
-.login_bj a{
-    display:inline-block;
-    width:100%;
-    height:4rem;
-    background:#297bf8;
-    text-align: center;
-    color:#fff;
-    line-height:4rem;
-    text-decoration: none;
-    border-radius:5px;
+.nav_logo{
+    text-align: right;
     margin-top:20px;
 }
-.login_pwd{
-    margin-top:20px;
+.right_nav ul{
+    list-style: none;
+    margin-right:50px;
 }
-.login_pwd span:last-child{
-    margin-left:185px;
-    color:#297bf8;
+.right_nav ul li{
+    margin-top:20px;
+    text-align: right;
+}
+.right_nav ul li a{
+    color:#333;
+    text-decoration: none; 
+}
+.nav button{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#f1f1f1;
+    border:0;
+    margin-left:230px;
 }

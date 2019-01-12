@@ -10,56 +10,54 @@ body{
 }
 /* 头部样式 */
 .head_body{
-    width:1440px;
+    width:1200px;
     height:150px;
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: nowrap;
+    display: flex; 
     margin:0 auto;
-}
-.head_bj{
-    width:100%;
-    background-color:rgba(0,0,0,0.3);
-    position: absolute;
-    z-index: 10;
 }
 .head_logo{
     width:235px;
     height:100px;
-    margin-top:10px;
+    margin-top:15px;
+}
+.head_nav{
+    width:450px;
 }
 .head_nav>ul{
-    line-height:8rem;
+    line-height:150px;
     list-style: none;
     display:flex;
     justify-content: space-between;
     white-space: nowrap;
 }
+.head_user{
+    width:200px;
+    margin-left:50px;
+}
 .head_user ul{
     list-style:none;
-    margin-top:50px;
+    margin-top:57px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
 .head_nav>ul>li,.head_user li{
     float:left;
-    margin-left:30px;
 }
 .head_nav a{
-    font-size:1rem;
+    font-size:16px;
     text-decoration:none;
     color:#333;
     font-family: 'Ruizi';
 }
 .head_search input{
-    width:15rem;
-    height:2rem;
+    width:230px;
+    height:35px;
     border:0;
     border-radius:5px;
     padding-left:12px;
-    margin-left:1rem;
-    margin-top:3rem;
+    margin-left:15px;
+    margin-top:55px;
     background:#f1f1f1 url('../img/search.png') no-repeat 13rem 4px;
     background-size:25px 25px;
 }
@@ -71,10 +69,51 @@ body{
     width:1px;
     height:27px;
 }
-#head_navbtn{
+#headnav{
     margin-left:10px;
     width:35px;
     height:35px;
+}
+.head_nav ul li a:hover{
+    color:#5ad9cc;
+}
+.nav{
+    width:300px;
+    height:100%;
+    background:#fafafa;
+    position:fixed;
+    right:0;
+    padding:20px;
+    display:none;
+    transition:all 2s;
+    z-index: 999;
+}
+.nav_logo{
+    text-align: right;
+    margin-top:20px;
+}
+.right_nav ul{
+    list-style: none;
+    margin-right:50px;
+}
+.right_nav ul li{
+    margin-top:20px;
+    text-align: right;
+}
+.right_nav ul li a{
+    color:#333;
+    text-decoration: none; 
+}
+.right_nav ul li a:hover{
+    color:#5ad9cc;
+}
+.nav button{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#f1f1f1;
+    border:0;
+    margin-left:230px;
 }
 /* banner样式 */
   .swiper-container {
@@ -105,8 +144,8 @@ body{
 /*原创设计*/
 .yc{
     margin:0px auto;
-    width:1440px;
-    height:550px;
+    width:1200px;
+    height:500px;
 }
 .yc_title,.gx_title,.qc_title,.xh_title{
     margin-top:40px;
@@ -123,8 +162,8 @@ body{
     margin-left:5px;
 }
 .yc_body{
-    width:1440px;
-    height:500px;
+    width:100%;
+    height:447px;
     margin-top:15px;
     display:flex;
     justify-content:space-between;
@@ -160,6 +199,7 @@ body{
 .yc_middle1{
     width:33%;
     position:relative;
+    overflow: hidden;
 }
 .yc_middle1 img,.yc_middle2 img{
     width:100%;
@@ -170,21 +210,38 @@ body{
     height:100px;
     position:absolute;
     background:rgba(0,0,0,0.3);
-    bottom: 1px;
+    bottom: 0;
     color:#fff;
     text-align:center;
     line-height:100px;
     font-family:Ruizi;
+    transition:all 1s;
 }
 .yc_middle1_logo,.yc_middle2_logo{
-    width:120px;
-    height:120px;
+    width:90px;
+    height:90px;
     background:#fff;
     border-radius:50%;
     position:absolute;
-    top:330px;
+    bottom:70px;
     left:20px;
     z-index: 2;
+    transition:all 1s;
+}
+.yc_middle1_js{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+    position: absolute;
+    /* top:0; */
+    z-index: 998;
+    display:flex;
+    align-items: center;
+    transition:all 1s;
+}
+.yc_middle1_js p{
+    color:#fff;
+    margin:0px auto;
 }
 .yc_middle2{
     width:28%;
@@ -217,8 +274,8 @@ body{
     line-height:50px;
 }
 .yc_right_logo1,.yc_right_logo2{
-    width:100px;
-    height:100px;
+    width:80px;
+    height:80px;
     background:#fff;
     border-radius:50%;
     position:absolute;
@@ -228,15 +285,15 @@ body{
 }
 /*个性风潮*/
 .gx{
-    width:1440px;
-    height:625px;
+    width:1200px;
+    height:550px;
     margin:0px auto;
 }
 .gx_body{
     margin-top:15px;
     background:#f1f1f1;
     width:100%;
-    height:580px;
+    height:505px;
     display:flex;
     justify-content: space-around;
 }
@@ -275,12 +332,12 @@ body{
     margin-top:10px;
 }
 .gx_left_lmk,.gx_left_sjs{
-    width:90px;
-    height:90px;
+    width:70px;
+    height:70px;
     display:inline-block;
     margin-left:30px;
     text-align:center;
-    margin-top:200px;
+    margin-top:150px;
 }
 .gx_left_lmk img,.gx_left_sjs img{
     width:100%;
@@ -319,9 +376,9 @@ body{
 }
 /*青春流行*/
 .qc{
-    width:1440px;
+    width:1200px;
     margin:0px auto;
-    height:620px;
+    height:545px;
 }
 .qc_body{
     width:100%;
@@ -329,7 +386,7 @@ body{
     display:flex;
     justify-content:space-around;
     background:#f1f1f1;
-    height:580px;
+    height:505px;
 }
 .qc_left,.qc_right{
     width:3%;
@@ -384,7 +441,7 @@ body{
 }
 .qc_right_nav{
     width:100%;
-    height:500px;
+    height:420px;
     background:#fff;
     margin-top:20px;
 }
@@ -406,11 +463,11 @@ body{
     display:inline-block;
 }
 .qc_right_dpd,.qc_right_cb{
-    width:80px;
-    height:80px;
+    width:60px;
+    height:60px;
     background:#fff;
     display:inline-block;
-    margin-top:120px;
+    margin-top:40px;
     margin-left:20px;
     text-align: center;
 }
@@ -424,9 +481,9 @@ body{
 }
 /*嘻哈潮流*/
 .xh{
-    width:1440px;
+    width:1200px;
     margin:0px auto;
-    height:550px;
+    height:470px;
 }
 .xh_body{
     margin-top:10px;
@@ -498,12 +555,11 @@ body{
     margin-top:50px;
 }
 .foot{
-    width:1440px;
+    width:1200px;
     margin:0px auto;
 }
 .foot_body{
     display:flex;
-
 }
 .foot_lx{
     width:25%;
