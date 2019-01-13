@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding:0;
+        margin:0;
+    }
+</style>
+<body>
+    <div id="a" style="width: 200px; height: 200px; background-color: #ddd;"></div>
+    <script>
+        var a=document.getElementById("a")
+        a.onmouseover=function(e){
+            var a=this;
+            var w=parseInt(a.style.width.replace("px",""))
+            var h=parseInt(a.style.height.replace("px",""))
+            // var x=a.offsetLeft;
+            // var y=a.offsetTop;
+            
+            var position="";
+            if(e.offsetX<(w/2)){
+                position="left"
+            }else if(e.offsetX>(w/2)){
+                position="right"
+            } 
+            position+="-"
+            if(e.offsetY<(h/2)){
+                position+="top"
+            }else if(e.offsetY>(h/2)){
+                position+="bottom"
+            }
+            alert(position)
+        }
+    </script>
+</body>
+</html>

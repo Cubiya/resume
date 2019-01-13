@@ -216,6 +216,7 @@ body{
     line-height:100px;
     font-family:Ruizi;
     transition:all 1s;
+    z-index:0;
 }
 .yc_middle1_logo,.yc_middle2_logo{
     width:90px;
@@ -228,24 +229,28 @@ body{
     z-index: 2;
     transition:all 1s;
 }
-.yc_middle1_js{
+.yc_middle1_js,.yc_middle2_js{
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.3);
     position: absolute;
-    /* top:0; */
     z-index: 998;
     display:flex;
     align-items: center;
-    transition:all 1s;
+    transition:all 0.1s;
 }
-.yc_middle1_js p{
+.yc_middle2_js{
+    left:-336px;
+    top:-447px;
+}
+.yc_middle1_js p,.yc_middle2_js p{
     color:#fff;
     margin:0px auto;
 }
 .yc_middle2{
     width:28%;
     position:relative;
+    overflow: hidden;
 }
 .yc_right{
     width:18%;
@@ -395,6 +400,7 @@ body{
 .qc_clothes_1,.qc_clothes_2,.qc_clothes_3,.qc_clothes_4,.qc_clothes_5,.qc_clothes_6{
     width:12%;
     height:100%;
+    margin-top:20px;
 }
 .qc_right_title{
     width:16%;
@@ -416,11 +422,27 @@ body{
 }
 .qc_clothes1_img{
     width:100%;
-    margin-top:20px;
     background:#fff;
+    position:relative;
+    overflow:hidden;
+}
+.qc_clothes1_img div{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+    top:-356px;
+    left:-144px;
+    transition: all 0.5s;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:14px;
 }
 .qc_clothes1_img img{
     width:100%;
+    height:100%;
 }
 .qc_clothes1_logo{
     width:100%;
