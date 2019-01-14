@@ -1,0 +1,176 @@
+*{padding:0;margin:0}
+body{
+    font-family: Ruizi;
+    color:#666;
+}
+/* 导入字体 */
+@font-face {
+    font-family: 'Ruizi';   /*字体名称*/
+    src: url('../font/ruizi.ttf');       /*字体源文件*/
+}
+/* 头部样式 */
+.head_body{
+    width:1200px;
+    height:150px;
+    display: flex; 
+    margin:0 auto;
+}
+.head_logo{
+    width:235px;
+    height:100px;
+    margin-top:15px;
+}
+.head_nav{
+    width:450px;
+}
+.head_nav>ul{
+    line-height:150px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.head_user{
+    width:200px;
+    margin-left:50px;
+}
+.head_user ul{
+    list-style:none;
+    margin-top:57px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.head_nav>ul>li,.head_user li{
+    float:left;
+}
+.head_nav a{
+    font-size:16px;
+    text-decoration:none;
+    color:#333;
+    font-family: 'Ruizi';
+}
+.head_search input{
+    width:230px;
+    height:35px;
+    border:0;
+    border-radius:5px;
+    padding-left:12px;
+    margin-left:15px;
+    margin-top:55px;
+    background:#f1f1f1 url('../img/search.png') no-repeat 13rem 4px;
+    background-size:25px 25px;
+}
+.head_user img{
+    width:27px;
+    height:27px;
+}
+#head_x1,#head_x2{
+    width:1px;
+    height:27px;
+}
+#headnav{
+    margin-left:10px;
+    width:35px;
+    height:35px;
+}
+.head_nav ul li a:hover{
+    color:#5ad9cc;
+}
+.nav{
+    width:300px;
+    height:100%;
+    background:#fafafa;
+    position:fixed;
+    right:0;
+    padding:20px;
+    display:none;
+    transition:all 2s;
+    z-index: 999;
+}
+.nav_logo{
+    text-align: right;
+    margin-top:20px;
+}
+.right_nav ul{
+    list-style: none;
+    margin-right:50px;
+}
+.right_nav ul li{
+    margin-top:20px;
+    text-align: right;
+}
+.right_nav ul li a{
+    color:#333;
+    text-decoration: none; 
+}
+.right_nav ul li a:hover{
+    color:#5ad9cc;
+}
+.nav button{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#f1f1f1;
+    border:0;
+    margin-left:230px;
+}
+/* 商品样式 */
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+.breadnav a{
+    font-size:14px;
+    text-decoration: none;
+    color:#666; 
+}
+.filter{
+    margin-top:20px;
+    border:1px solid #f1f1f1;
+    padding:20px;
+}
+.filter a{
+    text-decoration: none;
+    color:#666;
+    margin-left:20px;
+    font-size:14px;
+}
+.yc_product{
+    width:1200px;
+    
+}
+.product1{
+    float:left;
+    width:218px;
+    height:350px;
+    border:1px solid #e1e1e1;
+    margin-top:20px;
+    margin-right:10px;
+    margin-left:10px;
+}
+.product1>div>img{
+    width:100%;
+}
+.product1>div:nth-child(2){
+    display:flex;
+    justify-content: space-between;
+    padding:0px 10px;
+    margin:10px 0px;
+    color:#888;
+    font-size:14px;
+}
+.product1>div:nth-child(2)>span:first-child{
+    color:#5ad9cc;
+    font-size:20px;
+}
+.product1>div:nth-child(3){
+    padding:0 10px;
+    font-size:12px;
+}
+.product1>div:last-child{
+    padding:0 10px;
+    font-size:14px;
+    margin-top:15px;
+    text-align: right;
+}

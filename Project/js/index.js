@@ -4,14 +4,14 @@
     nav.onclick=function(){
         var nav=this;
         var btn=document.getElementsByClassName("nav")[0]
-        btn.style.display="block";
+        btn.style.right=`${0}px`;
     }
     /*关闭右边导航栏*/
     var navclose=document.querySelector(".nav>button")
     navclose.onclick=function(){
         var navclose=this;
         var btn=document.getElementsByClassName("nav")[0]
-        btn.style.display="none";
+        btn.style.right=`${-340}px`;
     }
     /* 图片悬停效果*/
     var yc_one=document.querySelector(".yc_middle1")
