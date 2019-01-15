@@ -148,6 +148,7 @@ body{
     margin-top:20px;
     margin-right:10px;
     margin-left:10px;
+    margin-bottom: 20px;
 }
 .product1>div>img{
     width:100%;
@@ -164,13 +165,128 @@ body{
     color:#5ad9cc;
     font-size:20px;
 }
-.product1>div:nth-child(3){
+.product1>div:nth-child(3) a{
     padding:0 10px;
-    font-size:12px;
+    font-size:14px;
+    line-height:18px;
+    text-decoration: none;
+    color:#333;
+    display:block;
 }
 .product1>div:last-child{
     padding:0 10px;
     font-size:14px;
-    margin-top:15px;
+    margin-top:20px;
     text-align: right;
+}
+/*底部信息*/
+.footer{
+    width:100%;
+    height:500px;
+    background:#f1f1f1;
+    margin-top:50px;
+    clear: both;
+}
+.foot{
+    width:1200px;
+    margin:0px auto;
+}
+.foot_body{
+    display:flex;
+}
+.foot_lx{
+    width:25%;
+    position:relative;
+    margin-top:20px;
+}
+.foot_rm{
+    width:100%;
+    margin-top:80px;
+    display:flex;
+    justify-content: space-around;
+}
+.foot_lx ul,.foot_rm ul{
+    list-style:none;
+}
+.foot_lx span{
+    display:inline-block;
+    font-family:Ruizi;
+    color:#666;
+    margin-left:10px;
+    font-size:18px;
+}
+.foot_rm li{
+    margin-top:20px;
+}
+.foot_rm a{
+    margin-left:20px;
+    text-decoration: none;
+    color:#666;
+}
+.foot_nav{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content:space-around;
+}
+.foot_tx{
+    width:25%;
+    height:100%;
+}
+.foot_tx_body{
+    margin-top:100px;
+    margin-left:50px;
+}
+.foot_search{
+    width:15rem;
+    border:0;
+    height:40px;
+    border-radius:10px;
+    padding-left:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+    background:#fff url(../img/send.png) no-repeat 90%;
+    background-size:30px 30px;
+}
+.foot_tx_lx{
+    width:100%;
+    display: flex;
+    margin-top:20px;
+    justify-content:space-between;
+}
+.foot_gz,.foot_code{
+    width:50%;
+}
+.foot_gz img{
+    width:30px;
+    height:30px;
+    margin-top:10px;
+}
+.foot_gz p{
+    font-size:20px;
+}
+.foot_code img{
+    width:150px;
+    height:150px;
+    display:inline-block;
+}
+.foot_hr{
+    margin-top:30px;
+    color:#666;
+}
+.foot_bq{
+    text-align:center;
+    margin-top:10px;
+}
+.dz{
+    position:absolute;
+    top:135px;
+}
+.phone{
+    position:absolute;
+    top:235px;
+}
+.email{
+    position:absolute;
+    top:335px;
 }
