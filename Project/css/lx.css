@@ -1,0 +1,109 @@
+*{margin:0;padding:0}
+.container{
+    width:88%;
+    margin:0px auto;
+}
+body::before{
+    content: "";
+    display:table;
+}
+/* 头部样式 */
+.head_body{
+    width:1200px;
+    height:150px;
+    display: flex; 
+    margin:0 auto;
+}
+.head_logo{
+    width:235px;
+    height:100px;
+    margin-top:15px;
+}
+.head_nav{
+    width:450px;
+}
+.head_nav>ul{
+    line-height:150px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.head_user{
+    width:200px;
+    margin-left:50px;
+}
+.head_user ul{
+    list-style:none;
+    margin-top:57px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.head_nav>ul>li,.head_user li{
+    float:left;
+}
+.head_nav a{
+    font-size:16px;
+    text-decoration:none;
+    color:#333;
+    font-family: 'Ruizi';
+}
+.head_search input{
+    width:230px;
+    height:35px;
+    border:0;
+    border-radius:5px;
+    padding-left:12px;
+    margin-left:15px;
+    margin-top:55px;
+    background:#f1f1f1 url('../img/search.png') no-repeat 13rem 4px;
+    background-size:25px 25px;
+}
+.head_user img{
+    width:27px;
+    height:27px;
+}
+#head_x1,#head_x2{
+    width:1px;
+    height:27px;
+}
+#headnav{
+    margin-left:10px;
+    width:35px;
+    height:35px;
+}
+.nav{
+    width:300px;
+    height:100%;
+    background:#fafafa;
+    position:fixed;
+    right:0;
+    padding:20px;
+    display:none;
+    transition:all 2s;
+}
+.nav_logo{
+    text-align: right;
+    margin-top:20px;
+}
+.right_nav ul{
+    list-style: none;
+    margin-right:50px;
+}
+.right_nav ul li{
+    margin-top:20px;
+    text-align: right;
+}
+.right_nav ul li a{
+    color:#333;
+    text-decoration: none; 
+}
+.nav button{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#f1f1f1;
+    border:0;
+    margin-left:230px;
+}
