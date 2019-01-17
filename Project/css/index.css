@@ -115,33 +115,8 @@ body{
     margin-left:230px;
 }
 /* banner样式 */
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
 /*原创设计*/
-.yc{
+#yc{
     margin:0px auto;
     width:1200px;
     height:500px;
@@ -236,10 +211,7 @@ body{
     z-index: 998;
     display:flex;
     align-items: center;
-    transition:all 0.5s;
-}
-.yc_middle2_js{
-    left:-336px;
+    transition:all 1s;
     top:-447px;
 }
 .yc_middle1_js p,.yc_middle2_js p{
@@ -258,10 +230,26 @@ body{
     justify-content: space-between;
     position:relative;
 }
+.yc_right_js1,.yc_right_js2{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+    position: absolute;
+    top:-219px;
+    z-index: 990;
+    display: flex;
+    align-items: center;
+    transition:all 1s;
+}
+.yc_right_js1 p,.yc_right_js2 p{
+    color:#fff;
+    margin:0 auto; 
+}
 .yc_right_1,.yc_right_2{
     width:100%;
     height:49%;
     position:relative;
+    overflow: hidden;
 }
 .yc_right img{
     width:100%;
@@ -276,6 +264,7 @@ body{
     color: #ffffff;
     text-align: center;
     line-height:50px;
+    transition:all 1s;
 }
 .yc_right_logo1,.yc_right_logo2{
     width:80px;
@@ -286,9 +275,10 @@ body{
     top:100px;
     left:20px;
     z-index: 2;
+    transition:all 1s;
 }
 /*个性风潮*/
-.gx{
+#gx{
     width:1200px;
     height:550px;
     margin:0px auto;
@@ -379,7 +369,7 @@ body{
     margin-top:20px;
 }
 /*青春流行*/
-.qc{
+#qc{
     width:1200px;
     margin:0px auto;
     height:545px;
@@ -501,7 +491,7 @@ body{
     right:0px;
 }
 /*嘻哈潮流*/
-.xh{
+#xh{
     width:1200px;
     margin:0px auto;
     height:470px;
