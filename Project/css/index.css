@@ -106,15 +106,72 @@ body{
 .right_nav ul li a:hover{
     color:#5ad9cc;
 }
-.nav button{
+.nav>a{
+    display:inline-block;
     width:50px;
     height:50px;
     border-radius:50%;
     background:#f1f1f1;
     border:0;
     margin-left:230px;
+    text-decoration: none;
+    text-align: center;
+    line-height:50px;
+    color:#333;
+}
+.nav>a:hover{
+    background:#e1e1e1;
 }
 /* banner样式 */
+#banner{
+    width:1200px;
+    height:530px;
+    margin:0 auto;
+    position:relative;
+}
+.bn1{
+     position:absolute;
+     transform: translate3d(0,0,0) scale(1);
+     z-index: 3;
+     transition: all 1s;
+}
+.bn2{
+    position:absolute;
+    transform:translate3d(-150px,0,0) scale(0.9);
+    z-index: 2;
+    transition: all 1s;
+}
+.bn3{
+    position:absolute;
+    transform: translate3d(150px,0,0) scale(0.9);
+    z-index: 1;
+    transition: all 1s;
+}
+#banner>a{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    position: absolute;
+    z-index: 10;
+    top:250px;
+}
+#banner>a:first-child{
+    background:rgba(255,255,255,0.3) url(../img/bn_left.png)no-repeat center center;
+    left:10px;
+}
+#banner>a:first-child:hover{
+    background:rgba(0,0,0,0.3) url(../img/bn_left.png)no-repeat center center;
+    right:10px;
+}
+#banner>a:nth-child(2){
+    background:rgba(255,255,255,0.3) url(../img/bn_right.png)no-repeat center center;
+    right:10px;
+}
+#banner>a:nth-child(2):hover{
+    background:rgba(0,0,0,0.3) url(../img/bn_right.png)no-repeat center center;
+    right:10px;
+}
 /*原创设计*/
 #yc{
     margin:0px auto;
@@ -272,7 +329,7 @@ body{
     background:#fff;
     border-radius:50%;
     position:absolute;
-    top:100px;
+    bottom:40px;
     left:20px;
     z-index: 2;
     transition:all 1s;
@@ -341,6 +398,24 @@ body{
 .gx_clothes_1_img,.gx_clothes_2_img{
     width:100%;
     margin-top:20px;
+    position:relative;
+    overflow: hidden;
+}
+.gx_clothes_2_img>div{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+    position: absolute;
+    display:flex;
+    align-items: center;
+    left:-144px;
+    top:-360px;
+    transition: all 0.5s;
+}
+.gx_clothes_2_img>div>p{
+    font-size:14px;
+    color:#fff;
+    margin:0 auto;
 }
 .gx_clothes_2_img img{
     width:100%;

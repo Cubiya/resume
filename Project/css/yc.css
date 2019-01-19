@@ -82,10 +82,9 @@ body{
     height:100%;
     background:#fafafa;
     position:fixed;
-    right:0;
+    right:-340px;
     padding:20px;
-    display:none;
-    transition:all 2s;
+    transition:all 1s;
     z-index: 999;
 }
 .nav_logo{
@@ -107,18 +106,79 @@ body{
 .right_nav ul li a:hover{
     color:#5ad9cc;
 }
-.nav button{
+.nav>a{
+    display:inline-block;
     width:50px;
     height:50px;
     border-radius:50%;
     background:#f1f1f1;
     border:0;
     margin-left:230px;
+    text-decoration: none;
+    text-align: center;
+    line-height:50px;
+    color:#333;
+}
+.nav>a:hover{
+    background:#e1e1e1;
+}
+/* banner样式 */
+#banner{
+    width:1200px;
+    height:530px;
+    margin:0 auto;
+    position:relative;
+}
+.bn1{
+     position:absolute;
+     transform: translate3d(0,0,0) scale(1);
+     z-index: 3;
+     transition: all 1s;
+}
+.bn2{
+    position:absolute;
+    transform:translate3d(-150px,0,0) scale(0.9);
+    z-index: 2;
+    transition: all 1s;
+}
+.bn3{
+    position:absolute;
+    transform: translate3d(150px,0,0) scale(0.9);
+    z-index: 1;
+    transition: all 1s;
+}
+#banner>a{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    position: absolute;
+    z-index: 10;
+    top:250px;
+}
+#banner>a:first-child{
+    background:rgba(255,255,255,0.3) url(../img/bn_left.png)no-repeat center center;
+    left:10px;
+}
+#banner>a:first-child:hover{
+    background:rgba(0,0,0,0.3) url(../img/bn_left.png)no-repeat center center;
+    right:10px;
+}
+#banner>a:nth-child(2){
+    background:rgba(255,255,255,0.3) url(../img/bn_right.png)no-repeat center center;
+    right:10px;
+}
+#banner>a:nth-child(2):hover{
+    background:rgba(0,0,0,0.3) url(../img/bn_right.png)no-repeat center center;
+    right:10px;
 }
 /* 商品样式 */
 .container{
     width:1200px;
-    margin:0 auto;
+    margin:0px auto;
+}
+.breadnav{
+    margin-top:20px;
 }
 .breadnav a{
     font-size:14px;
