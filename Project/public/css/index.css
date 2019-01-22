@@ -104,7 +104,7 @@ body{
     text-decoration: none; 
 }
 .right_nav ul li a:hover{
-    color:#5ad9cc;
+    color:#a2d4d5;
 }
 .nav>a{
     display:inline-block;
@@ -207,7 +207,7 @@ body{
     display:table;
 }
 .yc_left_title{
-    background:#5ad9cc;
+    background:#a2d4d5;
     height: 8rem;
 }
 .yc_left_title h2,.yc_left_title p{
@@ -597,7 +597,7 @@ body{
     width:15%;
 }
 .xh_right_title{
-    background:#5ad9cc;
+    background:#a2d4d5;
     height: 130px;
     text-align:center;
     color:#fff;
