@@ -17,9 +17,7 @@ $(function(){
     }
     function bn_left(){
         bn_class.unshift(bn_class[2])
-        console.log(bn_class)
         bn_class.pop()
-        console.log(bn_class)
         $("#banner>div").each(function(i,e){
             $(e).removeClass().addClass(bn_class[i])
         })

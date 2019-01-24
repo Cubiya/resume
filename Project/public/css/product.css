@@ -75,7 +75,7 @@ body{
     height:35px;
 }
 .head_nav ul li a:hover{
-    color:#5ad9cc;
+    color:#a2d4d5;
 }
 .nav{
     width:300px;
@@ -104,7 +104,7 @@ body{
     text-decoration: none; 
 }
 .right_nav ul li a:hover{
-    color:#5ad9cc;
+    color:#a2d4d5;
 }
 .nav>a{
     display:inline-block;
@@ -210,7 +210,10 @@ body{
     margin-left:10px;
     margin-bottom: 20px;
 }
-.product1>div>img{
+.product1:hover{
+    border:1px solid #a2d4d5;
+}
+.product1>div>a>img{
     width:100%;
 }
 .product1>div:nth-child(2){
@@ -222,7 +225,7 @@ body{
     font-size:14px;
 }
 .product1>div:nth-child(2)>span:first-child{
-    color:#5ad9cc;
+    color:#a2d4d5;
     font-size:20px;
 }
 .product1>div:nth-child(3) a{
@@ -230,8 +233,12 @@ body{
     font-size:14px;
     line-height:18px;
     text-decoration: none;
-    color:#333;
+    color:#666;
     display:block;
+}
+.product1>div:nth-child(3) a:hover{
+    color:#333;
+    text-decoration:underline;
 }
 .product1>div:last-child{
     padding:0 10px;
@@ -239,6 +246,35 @@ body{
     margin-top:20px;
     text-align: right;
 }
+.page{
+    clear: both;
+    height:50px;
+}
+.page ul{
+    list-style: none;
+    margin-left:325px;
+    height:100%;
+}
+.page ul li{
+    float:left;
+    margin-left:15px;
+}
+.page ul li a{
+    text-decoration: none;
+    padding:10px;
+    background:#f1f1f1;
+    color:#333;
+    border-radius:5px;
+    line-height: 50px;
+}
+.page ul li a:hover{
+    background:#e1e1e1
+}
+.page ul li input{
+    width:30px;
+    text-align: center;
+}
+
 /*底部信息*/
 .footer{
     width:100%;
@@ -273,7 +309,7 @@ body{
     font-family:Ruizi;
     color:#666;
     margin-left:10px;
-    font-size:18px;
+    font-size:15px;
 }
 .foot_rm li{
     margin-top:20px;
@@ -282,6 +318,9 @@ body{
     margin-left:20px;
     text-decoration: none;
     color:#666;
+}
+.foot_rm a:hover{
+    color:#333;
 }
 .foot_nav{
     width:50%;
@@ -349,29 +388,4 @@ body{
 .email{
     position:absolute;
     top:335px;
-}
-.page{
-    clear: both;
-    height:50px;
-}
-.page ul{
-    list-style: none;
-    margin-left:325px;
-    height:100%;
-}
-.page ul li{
-    float:left;
-    margin-left:15px;
-}
-.page ul li a{
-    text-decoration: none;
-    padding:10px;
-    background:#f1f1f1;
-    color:#333;
-    border-radius:5px;
-    line-height: 50px;
-}
-.page ul li input{
-    width:30px;
-    text-align: center;
 }
