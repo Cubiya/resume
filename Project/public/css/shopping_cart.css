@@ -4,7 +4,121 @@
     font-family: 'Ruizi';   /*字体名称*/
     src: url('../font/ruizi.ttf');       /*字体源文件*/
 }
-iframe{width:100%;height:150px;}
+/* 头部样式 */
+.head_body{
+    width:1200px;
+    height:150px;
+    display: flex; 
+    margin:0 auto;
+}
+.head_logo{
+    width:235px;
+    height:100px;
+    margin-top:15px;
+}
+.head_nav{
+    width:450px;
+}
+.head_nav>ul{
+    line-height:150px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.head_user{
+    width:200px;
+    margin-left:50px;
+}
+.head_user ul{
+    list-style:none;
+    margin-top:57px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.head_nav>ul>li,.head_user li{
+    float:left;
+}
+.head_nav a{
+    font-size:16px;
+    text-decoration:none;
+    color:#333;
+    font-family: 'Ruizi';
+}
+.head_search input{
+    width:230px;
+    height:35px;
+    border:0;
+    border-radius:5px;
+    padding-left:12px;
+    margin-left:15px;
+    margin-top:55px;
+    background:#f1f1f1 url('../img/search.png') no-repeat 13rem 4px;
+    background-size:25px 25px;
+}
+.head_user img{
+    width:27px;
+    height:27px;
+}
+#head_x1,#head_x2{
+    width:1px;
+    height:27px;
+}
+#headnav{
+    margin-left:10px;
+    width:35px;
+    height:35px;
+}
+.head_nav ul li a:hover{
+    color:#a2d4d5;
+}
+.nav{
+    width:300px;
+    height:100%;
+    background:#fafafa;
+    position:fixed;
+    right:-340px;
+    padding:20px;
+    transition:all 1s;
+    z-index: 999;
+}
+.nav_logo{
+    text-align: right;
+    margin-top:20px;
+}
+.right_nav ul{
+    list-style: none;
+    margin-right:50px;
+}
+.right_nav ul li{
+    margin-top:20px;
+    text-align: right;
+}
+.right_nav ul li a{
+    color:#333;
+    text-decoration: none; 
+}
+.right_nav ul li a:hover{
+    color:#a2d4d5;
+}
+.nav>a{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#f1f1f1;
+    border:0;
+    margin-left:230px;
+    text-decoration: none;
+    text-align: center;
+    line-height:50px;
+    color:#333;
+}
+.nav>a:hover{
+    background:#e1e1e1;
+}
+/* 购物车列表样式 */
 .container{
     width:1200px;
     margin:0 auto;

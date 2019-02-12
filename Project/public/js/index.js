@@ -22,8 +22,15 @@ $(function(){
             $(e).removeClass().addClass(bn_class[i])
         })
     }
-    // 自动播放
-    setInterval(bn_right,3000)
+    // 自动播放、鼠标进入停止自动播放
+    (function a(){
+        var auto =setInterval(bn_right,3000)
+        $("#banner>div,#banner>a").mouseenter(function(){
+            clearInterval(auto)
+        }).mouseleave(function(){
+            a()
+        })
+    })()
     // banner左边按钮
     $("#banner>a:first").click(function(){
         bn_left();
