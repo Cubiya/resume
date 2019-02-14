@@ -9,7 +9,7 @@ server.use(express.static('public'))
 // 配置跨域路径
 server.use(cors({
     origin:["http://127.0.0.1:5500"],
-    credentials:true
+    credentials:false
 }))
 //将post请求的数据转为对象
 server.use(bodyParser.urlencoded({

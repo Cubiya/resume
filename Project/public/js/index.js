@@ -1,4 +1,20 @@
 $(function(){
+    ajax({
+        url:"http://127.0.0.1:3000/banner/",
+        type:"get",
+        dataType:"json"
+    }).then(function(data){
+        var b = data
+        var html = `
+        <a href="javascript:;" class="bn_left"></a>
+        <a href="javascript:;" class="bn_right"></a>
+        <div class="bn1"><img src="${b[0].lg}"></div>
+        <div class="bn2"><img src="${b[1].lg}"></div>
+        <div class="bn3"><img src="${b[2].lg}"></div>
+        `
+        var div = document.querySelector("#banner")
+        div.innerHTML = html
+    })
     /******************** 侧边导航 ********************/
     $("#headnav").click(function(){
         $(".nav").css("right","0").children(":first")
