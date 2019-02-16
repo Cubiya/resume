@@ -247,7 +247,7 @@ body{
     text-align:center;
     line-height:100px;
     font-family:Ruizi;
-    transition:all 1s;
+    transition:all 0.2s;
     z-index:0;
 }
 .yc_middle1_logo,.yc_middle2_logo{
@@ -259,7 +259,7 @@ body{
     bottom:70px;
     left:20px;
     z-index: 2;
-    transition:all 1s;
+    transition:all 0.2s;
 }
 .yc_middle1_js,.yc_middle2_js{
     width:100%;
@@ -269,7 +269,7 @@ body{
     z-index: 998;
     display:flex;
     align-items: center;
-    transition:all 1s;
+    transition:all 0.2s;
     top:-447px;
 }
 .yc_middle1_js p,.yc_middle2_js p{
@@ -297,7 +297,7 @@ body{
     z-index: 990;
     display: flex;
     align-items: center;
-    transition:all 1s;
+    transition:all 0.2s;
 }
 .yc_right_js1 p,.yc_right_js2 p{
     color:#fff;
@@ -322,7 +322,7 @@ body{
     color: #ffffff;
     text-align: center;
     line-height:50px;
-    transition:all 1s;
+    transition:all 0.2s;
 }
 .yc_right_logo1,.yc_right_logo2{
     width:80px;
@@ -333,7 +333,7 @@ body{
     bottom:40px;
     left:20px;
     z-index: 2;
-    transition:all 1s;
+    transition:all 0.2s;
 }
 /*个性风潮*/
 #gx{
@@ -398,20 +398,21 @@ body{
 }
 .gx_clothes_1_img,.gx_clothes_2_img{
     width:100%;
+    height:360px;
     margin-top:20px;
     position:relative;
     overflow: hidden;
 }
 .gx_clothes_2_img>div{
     width:100%;
-    height:100%;
+    height:360px;
     background:rgba(0,0,0,0.3);
     position: absolute;
     display:flex;
     align-items: center;
     left:-144px;
     top:-360px;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 .gx_clothes_2_img>div>p{
     font-size:14px;
@@ -420,6 +421,7 @@ body{
 }
 .gx_clothes_2_img img{
     width:100%;
+    height:360px;
 }
 .gx_logo01{
     width:100%;
@@ -429,7 +431,7 @@ body{
 }
 .gx_logo01>img{
     width:70%;
-    margin-top:4px;
+    margin-top:12px;
 }
 .gx_clothes_1 p,.gx_clothes_2 p,.gx_clothes_3 p,.gx_clothes_4 p,.gx_clothes_5 p,.gx_clothes_6 p{
     text-align:center;
@@ -487,6 +489,7 @@ body{
 }
 .qc_clothes1_img{
     width:100%;
+    height:360px;
     background:#fff;
     position:relative;
     overflow:hidden;
@@ -494,11 +497,11 @@ body{
 .qc_clothes1_img div{
     position:absolute;
     width:100%;
-    height:100%;
+    height:360px;
     background:rgba(0,0,0,0.3);
     top:-356px;
     left:-144px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     color:#fff;
     display: flex;
     align-items: center;
@@ -517,7 +520,7 @@ body{
 }
 .qc_clothes1_logo img{
     width:70%;
-    margin-top:4px;
+    margin-top:12px;
 }
 .qc_clothes_1 p,.qc_clothes_2 p,.qc_clothes_3 p,.qc_clothes_4 p,.qc_clothes_5 p,.qc_clothes_6 p{
     text-align:center;
@@ -621,8 +624,7 @@ body{
     text-align: center;
 }
 .xh_right_img img{
-    width:74%;
-    height:74%;
+    width:100%;
 }
 .xh_clothes_1_text{
     position:absolute;

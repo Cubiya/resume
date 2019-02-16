@@ -16,9 +16,36 @@ server.use(bodyParser.urlencoded({
    extended:false
 }))
 
-// 
+// 请求banner数据
 server.get("/banner",(req,res)=>{
     var sql = "SELECT bid,sm,lg FROM cubi_banner"
+    pool.query(sql,(err,result)=>{
+        if(err) throw err
+        res.send(result)
+    })
+})
+
+//请求导航数据
+server.get("/nav",(req,res)=>{
+    var sql = "SELECT nid,name,url FROM cubi_nav"
+    pool.query(sql,(err,result)=>{
+        if(err) throw err
+        res.send(result)
+    })
+}) 
+
+//请求原创设计数据
+server.get("/index_yc",(req,res)=>{
+    var sql = "SELECT title,pic,plogo FROM cubi_index_yc"
+    pool.query(sql,(err,result)=>{
+        if(err) throw err
+        res.send(result)
+    })
+})
+
+//请求个性风潮数据
+server.get("/index_gx",(req,res)=>{
+    var sql = "SELECT title,pic,plogo FROM cubi_index_gx"
     pool.query(sql,(err,result)=>{
         if(err) throw err
         res.send(result)

@@ -1,20 +1,4 @@
 $(function(){
-    ajax({
-        url:"http://127.0.0.1:3000/banner/",
-        type:"get",
-        dataType:"json"
-    }).then(function(data){
-        var b = data
-        var html = `
-        <a href="javascript:;" class="bn_left"></a>
-        <a href="javascript:;" class="bn_right"></a>
-        <div class="bn1"><img src="${b[0].lg}"></div>
-        <div class="bn2"><img src="${b[1].lg}"></div>
-        <div class="bn3"><img src="${b[2].lg}"></div>
-        `
-        var div = document.querySelector("#banner")
-        div.innerHTML = html
-    })
     /******************** 侧边导航 ********************/
     $("#headnav").click(function(){
         $(".nav").css("right","0").children(":first")
@@ -23,7 +7,7 @@ $(function(){
         })
     })
     /******************** 广告轮播 *******************/
-    var bn_class=["bn1","bn2","bn3"] //#endregion
+    var bn_class=["bn1","bn2","bn3"] //样式
     function bn_right(){
         bn_class.push(bn_class[0])
         bn_class.shift()
@@ -41,49 +25,38 @@ $(function(){
     // 自动播放、鼠标进入停止自动播放
     (function a(){
         var auto =setInterval(bn_right,3000)
-        $("#banner>div,#banner>a").mouseenter(function(){
+        $("#banner,#banner>a").mouseenter(function(){
             clearInterval(auto)
-        }).mouseleave(function(){
+        }).mouseleave(function(){ 
             a()
         })
     })()
-    // banner左边按钮
-    $("#banner>a:first").click(function(){
-        bn_left();
-    })
-    // banner右边按钮
-    $("#banner>a:nth-child(2)").click(function(){
-        bn_right()
-    })
+    
+    $("#banner").on('mouseover', function () {
+        // banner左边按钮
+        $("#banner>a:first-child").click(function() {
+            bn_left()
+        })
+        // banner右边按钮
+        $("#banner>a:nth-child(2)").click(function(){
+            bn_right()
+        })
+    });
 
     /******************* 原创设计 ******************/
-    // 进入函数
-    function yc_enter(my){
-        $(my).mouseover(function(){
-            $(my).children(":last").css("top","0")
-            .prev().css("bottom","-100px")
-            .prev().css("bottom","-90px")
-        })
-    }
-    // 离开函数
-    function yc_leave(my){
-        $(my).mouseout(function(){
-            $(my).children(":last").css("top","-447px")
-            .prev().css("bottom","0")
-            .prev().css("bottom","70px")
-        })
-    }
-    $(".yc_middle1,.yc_middle2").mouseenter(function(){
-        yc_enter($(this))
-    }).mouseleave(function(){
-        yc_leave($(this))
-    })
-    $(".yc_right_1,.yc_right_2").mouseenter(function(){
-        yc_enter($(this))
-    }).mouseleave(function(){
-        yc_leave($(this))
-    })
 
+    $(".yc_middle1,.yc_middle2,.yc_right_1,.yc_right_2").mouseenter(function(){
+        // 进入函数
+        $(this).children(":last").css("top","0")
+        .prev().css("bottom","-100px")
+        .prev().css("bottom","-90px")
+    }).mouseleave(function(){
+        // 离开函数
+        $(this).children(":last").css("top","-447px")
+        .prev().css("bottom","0")
+        .prev().css("bottom","70px")
+    })
+    console.log($("yc_right_1"))
     /************** 个性风潮 and 青春流行 **************/ 
     $(".gx_clothes_2_img,.qc_clothes1_img").bind("mouseenter mouseleave",function(e) {
         var $gx=$(this)
