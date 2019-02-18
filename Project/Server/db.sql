@@ -60,11 +60,11 @@ CREATE TABLE cubi_index_qc(
     plogo VARCHAR(128)
 );
 INSERT INTO cubi_index_qc VALUES(null,"弄潮为乐，青春不凡","http://127.0.0.1:3000/qc/qc_01.jpg","http://127.0.0.1:3000/qc/qc_logo01.png");
-INSERT INTO cubi_index_qc VALUES(null,"弄潮为乐，青春不凡","http://127.0.0.1:3000/qc/qc_02.jpg","http://127.0.0.1:3000/qc/qc_logo02.png");
-INSERT INTO cubi_index_qc VALUES(null,"弄潮为乐，青春不凡","http://127.0.0.1:3000/qc/qc_03.jpg","http://127.0.0.1:3000/qc/qc_logo03.png");
-INSERT INTO cubi_index_qc VALUES(null,"弄潮为乐，青春不凡","http://127.0.0.1:3000/qc/qc_04.jpg","http://127.0.0.1:3000/qc/qc_logo04.png");
-INSERT INTO cubi_index_qc VALUES(null,"弄潮为乐，青春不凡","http://127.0.0.1:3000/qc/qc_05.jpg","http://127.0.0.1:3000/qc/qc_logo05.png");
-INSERT INTO cubi_index_qc VALUES(null,"弄潮为乐，青春不凡","http://127.0.0.1:3000/qc/qc_06.jpg","http://127.0.0.1:3000/qc/qc_logo06.png");
+INSERT INTO cubi_index_qc VALUES(null,"日系潮流我做主","http://127.0.0.1:3000/qc/qc_02.jpg","http://127.0.0.1:3000/qc/qc_logo02.png");
+INSERT INTO cubi_index_qc VALUES(null,"原创日韩风","http://127.0.0.1:3000/qc/qc_03.jpg","http://127.0.0.1:3000/qc/qc_logo03.png");
+INSERT INTO cubi_index_qc VALUES(null,"你喜欢，你就买。","http://127.0.0.1:3000/qc/qc_04.jpg","http://127.0.0.1:3000/qc/qc_logo04.png");
+INSERT INTO cubi_index_qc VALUES(null,"不断创新 跃进不止","http://127.0.0.1:3000/qc/qc_05.jpg","http://127.0.0.1:3000/qc/qc_logo05.png");
+INSERT INTO cubi_index_qc VALUES(null,"傲娇小爷潮搭达人","http://127.0.0.1:3000/qc/qc_06.jpg","http://127.0.0.1:3000/qc/qc_logo06.png");
 
 -- 嘻哈流行数据表
 CREATE TABLE cubi_index_xh(
@@ -73,6 +73,6 @@ CREATE TABLE cubi_index_xh(
     pic VARCHAR(128),
     plogo VARCHAR(128)
 );
-INSERT INTO cubi_index_qc VALUES(null,"秋季欧美潮牌个性印花圆领卫衣男嘻哈宽松oversize国潮情侣外套女","http://127.0.0.1:3000/xh/xh_01.jpg","http://127.0.0.1:3000/xh/xh_logo01.png");
-INSERT INTO cubi_index_qc VALUES(null,"美式街头简约字母连帽卫衣男女情侣加绒加大码宽松长袖套帽外套潮","http://127.0.0.1:3000/xh/xh_02.jpg","http://127.0.0.1:3000/xh/xh_logo02.png");
-INSERT INTO cubi_index_qc VALUES(null,"欧美街头潮牌oversize宽松情侣卫衣男潮流外套","http://127.0.0.1:3000/xh/xh_03.jpg","http://127.0.0.1:3000/xh/xh_logo03.png");
+INSERT INTO cubi_index_xh VALUES(null,"秋季欧美潮牌个性印花圆领卫衣男嘻哈宽松oversize国潮情侣外套女","http://127.0.0.1:3000/xh/xh_01.jpg","http://127.0.0.1:3000/xh/xh_logo01.png");
+INSERT INTO cubi_index_xh VALUES(null,"美式街头简约字母连帽卫衣男女情侣加绒加大码宽松长袖套帽外套潮","http://127.0.0.1:3000/xh/xh_02.jpg","http://127.0.0.1:3000/xh/xh_logo02.png");
+INSERT INTO cubi_index_xh VALUES(null,"欧美街头潮牌oversize宽松情侣卫衣男潮流外套","http://127.0.0.1:3000/xh/xh_03.jpg","http://127.0.0.1:3000/xh/xh_logo03.png");

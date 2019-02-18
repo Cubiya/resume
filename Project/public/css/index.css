@@ -464,10 +464,15 @@ body{
     width:3%;
     height:100%;
 }
-.qc_clothes_1,.qc_clothes_2,.qc_clothes_3,.qc_clothes_4,.qc_clothes_5,.qc_clothes_6{
-    width:12%;
+.qc_clothes_1{
+    width:16%;
     height:100%;
     margin-top:20px;
+}
+#qc_clothes{
+    width:900px;
+    display: flex;
+    justify-content: space-around
 }
 .qc_right_title{
     width:16%;
@@ -522,7 +527,7 @@ body{
     width:70%;
     margin-top:12px;
 }
-.qc_clothes_1 p,.qc_clothes_2 p,.qc_clothes_3 p,.qc_clothes_4 p,.qc_clothes_5 p,.qc_clothes_6 p{
+.qc_clothes_1 p{
     text-align:center;
     margin-top:10px;
     font-family:Ruizi;

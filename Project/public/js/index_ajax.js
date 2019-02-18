@@ -110,8 +110,148 @@ $(function(){
         dataType:"json"
     }).then(function(data){
         var gx = data
-        for(var item of gx){
-            console.log(item)
+        // 产品1
+        var html1 = `
+        <div class="gx_clothes_2_img">
+        <img src="${gx[0].pic}">
+        <div><p>从一而终，暗黑至极</p></div>
+        </div>
+        <div class="gx_logo01">
+        <img src="${gx[0].plogo}" >
+        </div>
+        <p>${gx[0].title}</p>
+        `
+        var div1 = document.querySelector("#gx>.gx_body>.gx_clothes_1")
+        div1.innerHTML = html1
+
+        // 产品2
+        var html2 = `
+        <div class="gx_clothes_2_img">
+        <img src="${gx[1].pic}">
+        <div><p>从一而终，暗黑至极</p></div>
+        </div>
+        <div class="gx_logo01">
+        <img src="${gx[1].plogo}" >
+        </div>
+        <p>${gx[1].title}</p>
+        `
+        var div2 = document.querySelector("#gx>.gx_body>.gx_clothes_2")
+        div2.innerHTML = html2
+
+        // 产品3
+        var html3 = `
+        <div class="gx_clothes_2_img">
+        <img src="${gx[2].pic}">
+        <div><p>从一而终，暗黑至极</p></div>
+        </div>
+        <div class="gx_logo01">
+        <img src="${gx[2].plogo}" >
+        </div>
+        <p>${gx[2].title}</p>
+        `
+        var div3 = document.querySelector("#gx>.gx_body>.gx_clothes_3")
+        div3.innerHTML = html3
+
+        // 产品4
+        var html4 = `
+        <div class="gx_clothes_2_img">
+        <img src="${gx[3].pic}">
+        <div><p>从一而终，暗黑至极</p></div>
+        </div>
+        <div class="gx_logo01">
+        <img src="${gx[3].plogo}" >
+        </div>
+        <p>${gx[3].title}</p>
+        `
+        var div4 = document.querySelector("#gx>.gx_body>.gx_clothes_4")
+        div4.innerHTML = html4
+
+        // 产品5
+        var html5 = `
+        <div class="gx_clothes_2_img">
+        <img src="${gx[4].pic}">
+        <div><p>从一而终，暗黑至极</p></div>
+        </div>
+        <div class="gx_logo01">
+        <img src="${gx[4].plogo}" >
+        </div>
+        <p>${gx[4].title}</p>
+        `
+        var div5 = document.querySelector("#gx>.gx_body>.gx_clothes_5")
+        div5.innerHTML = html5
+    })
+
+    /******************** 青春流行数据 *********************/
+    ajax({
+        url:"http://127.0.0.1:3000/index_qc",
+        type:"get",
+        dataType:"json"
+    }).then(function(data){
+        var qc = data
+        var div = document.getElementById("qc_clothes")
+        var html = ""
+        for(var item of qc){
+            
+            html = `
+            <div class="qc_clothes_1">
+            <div class="qc_clothes1_img">
+                <img src="${item.pic}">
+                <div>${item.title}</div>
+            </div>
+            <div class="qc_clothes1_logo">
+                <img src="${item.plogo}" >
+            </div>
+            <p>${item.title}</p>
+            </div>
+            `
+            div.innerHTML+=html
         }
+    })
+
+    /******************** 嘻哈潮流数据 *********************/
+    ajax({
+        url:"http://127.0.0.1:3000/index_xh",
+        type:"get",
+        dataType:"json"
+    }).then(function(data){
+        var xh = data
+        // 产品1
+        var html1 = `
+        <img src="${xh[0].pic}">
+			<div class="xh_clothes_1_text">
+			<span>${xh[0].title}</span>
+		</div>
+        `
+        var div1 = document.querySelector("#xh>.xh_body>.xh_clothes_1")
+        div1.innerHTML = html1
+
+        // 产品2
+        var html2 = `
+        <img src="${xh[1].pic}">
+			<div class="xh_clothes_1_text">
+			<span>${xh[1].title}</span>
+		</div>
+        `
+        var div2 = document.querySelector("#xh>.xh_body>.xh_clothes_2")
+        div2.innerHTML = html2
+
+        // 产品3
+        var html3 = `
+        <img src="${xh[2].pic}">
+			<div class="xh_clothes_1_text">
+			<span>${xh[2].title}</span>
+		</div>
+        `
+        var div3 = document.querySelector("#xh>.xh_body>.xh_clothes_3")
+        div3.innerHTML = html3
+
+        // logo
+        var html4 = `
+        <img src="${xh[0].plogo}">
+		<img src="${xh[1].plogo}">
+		<img src="${xh[2].plogo}">
+        `
+        var logo = document.querySelector("#xh .xh_right_img")
+        logo.innerHTML = html4
     })
 })

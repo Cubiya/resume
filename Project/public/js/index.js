@@ -56,9 +56,12 @@ $(function(){
         .prev().css("bottom","0")
         .prev().css("bottom","70px")
     })
-    console.log($("yc_right_1"))
-    /************** 个性风潮 and 青春流行 **************/ 
-    $(".gx_clothes_2_img,.qc_clothes1_img").bind("mouseenter mouseleave",function(e) {
+
+    /************** 个性风潮 and 青春流行 **************/
+
+    $("#gx,#qc").on("mouseenter",function(){
+    // 辅助找到动态添加的元素
+    $(".gx_clothes_2_img,.qc_clothes1_img").on("mouseenter mouseleave",function(e) {
         var $gx=$(this)
         var w = $(this).width();
         var h = $(this).height();
@@ -88,6 +91,7 @@ $(function(){
                     $gx.children(":last").css({left:`-${w}px`,top:0})
                 }
             }
-     })
+      })
+    })
 })
 
