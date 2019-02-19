@@ -1,84 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登录页面</title>
-    <link rel="stylesheet" href="./css/login.css">
+<meta charset="UTF-8">
+<title>Cubi-登录页面</title>
+<link type="text/css" rel="stylesheet" href="css/login.css">
 </head>
 <body>
-<div class="head_bj">
-<div class="container">
-<header>
-<div class="head_body">
-    <!--logo-->
-    <div>
-        <img class="head_logo" src="img/logo.png" alt="logo">
+<!-- 头部信息 -->
+<div class="nav">
+    <a href="javascript:;" class="close">X</a>
+    <div class="nav_logo">
+        <img src="img/logo.png">
     </div>
-    <!--导航-->
-    <div class='head_nav'>
-        <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">购物车</a></li>
-            <li><a href="#">原创设计</a></li>
-            <li><a href="#">个性风潮</a></li>
-            <li><a href="#">青春流行</a></li>
-            <li><a href="#">嘻哈潮流</a></li>
-            <li><a href="#">联系我们</a></li>
-        </ul>
-    </div>	
-    <!--搜索栏-->
     <div class='head_search'>
         <input type="text" placeholder="请输入搜索内容">
     </div>
-    <!--用户登录-->	
-    <div class=head_user >
+    <div class="right_nav">
         <ul>
-            <li><img src="img/cart_b.png"></li>
-            <li><img src="img/x.png" id="head_x1"></li>
-            <li><img src="img/Collection_b.png"></li>
-            <li><img src="img/x.png" id="head_x2"></li>
-            <li><img src="img/user_b.png"></li>
-            <li><img src="img/nav.png" id=head_navbtn></li>
+            <!-- 导航 -->
         </ul>
     </div>
 </div>
-</header>
-</div>
-</div>
-<!-- banner -->
-<div class="banner">
-    <!-- <img src="img/banner2.jpg"> -->
-</div>
-<!-- 登陆 -->
-<div class="login">
-    <div class="login_bj">
-        <div class="login_head">
-            <span>账号密码登录</span>
-            <span>短信快捷登录&gt;</span>
-        </div>
-        <div class="login_user">
-            <input type="text" placeholder="手机/邮箱/用户名">
-            <input type="password" placeholder="密码">
-        </div>
-        <div class="login_auto">
-            <input type="checkbox">
-            <span>下次自动登录</span>
-        </div>
-        <a href="javascript:;">登录</a>
-        <div class="login_pwd">
-            <span>忘记密码?</span>
-            <span>海外手机号</span>
-        </div>
+<div class="container">
+<div class="head_bj">
+    <div class="head_body">
+        <!--logo-->
         <div>
-            <span>扫一扫登录</span>
-            <img src="">
-            <img src="">
-            <img src="">
-            <span>立即注册</span>
+            <img class="head_logo" src="img/logo.png" alt="logo">
+        </div>
+        <!--导航-->
+        <div class='head_nav'>
+            <ul>
+            <!-- 导航 -->
+            </ul>
+        </div>	
+        <!--搜索栏-->
+        <div class='head_search'>
+            <input type="text" placeholder="请输入搜索内容">
+        </div>
+        <!--用户登录-->	
+        <div class=head_user >
+            <ul>
+                <li><a href="shopping_cart.html"><img src="img/shopping_cart.png"></a></li>
+                <li><img src="img/x.png" id="head_x1"></li>
+                <li><img src="img/Collection.png"></li>
+                <li><img src="img/x.png" id="head_x2"></li>
+                <li><a href="login.html"><img src="img/user.png"></a></li>
+                <li><a href="javascipt:;"><img src="img/nav.png"
+                        id="headnav"></a></li>
+            </ul>
         </div>
     </div>
-<!-- </div>
+</div>
+</div>
+<!-- 登录页面 -->
+<div class="logo-box">
+    <div class="login" style="">
+        <div class="bxs-row" style="text-align:center;">
+            <img id="logo" src="img/logo.jpg" style="width:72px;"><span class="tips" style="color:red;"></span>
+        </div>
+        <div class="bxs-row">
+            <input type="text" class="username" placeholder="用户名" value="admin">
+            <p class=" err err-username"></p>
+        </div>
+        <div class="bxs-row">
+            <input type="password" class="password" placeholder="密码">
+            <p class="err err-password"></p>
+        </div>
+        <div class="bxs-row">
+            <input type="submit" class="submit btn" value="登录">
+        </div>
+    </div>
+    <div class="verBox">
+        <div id="imgVer" style="display:inline-block;"></div>
+    </div>
+</div>
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/login.js"></script>
+<script>
+    imgVer({
+        el:'$("#imgVer")',
+        width:'260',
+        height:'116',
+        img:[
+            'img/ver.png',
+            'img/ver-1.png',
+            'img/ver-2.png',
+            'img/ver-3.png'
+        ],
+        success:function () {
+            //alert('执行登录函数');
+            $(".login").css({
+                "left":"0",
+                "opacity":"1"
+            });
+            $(".verBox").css({
+                "left":"404px",
+                "opacity":"0"
+            });
+            $(".tips").html('你是不是不知道账号密码！？？？');
+            $("#logo").attr("src",'img/login-err.png')
+        },
+        error:function () {
+            //alert('错误什么都不执行')
+        }
+    });
+    $(".submit").on('click',function () {
+        if($(".username").val() == '') {
+            $(".tips").html('老兄！！你用户名呢！？？？');
+            $("#logo").attr("src",'img/null-username.jpg')
+        } else if($(".password").val() == '') {
+            $(".tips").html('老兄！！你密码呢！？？？');
+            $("#logo").attr("src",'img/null-password.jpg')
+        } else {
+            $(".login").css({
+                "left":"-404px",
+                "opacity":"0"
+            });
+            $(".verBox").css({
+                "left":"0",
+                "opacity":"1"
+            })
+        }
+    })
+</script>
+<div style="text-align:center;">
+<p><a href="http://127.0.0.1:5500/public/index.html">返回首页</a></p>
+</div>
 </body>
 </html>
