@@ -174,7 +174,7 @@ body{
     right:10px;
 }
 /* 商品样式 */
-.container{
+#container{
     width:1200px;
     margin:0px auto;
 }

@@ -1,0 +1,67 @@
+*{padding:0;margin:0}
+body{
+    font-family: Ruizi;
+    color:#666;
+}
+/* 导入字体 */
+@font-face {
+    font-family: 'Ruizi';   /*字体名称*/
+    src: url('../font/ruizi.ttf');       /*字体源文件*/
+}
+#container{
+    width:1200px;
+    margin:0px auto;
+}
+.breadnav{
+    margin-top:20px;
+}
+.breadnav a{
+    font-size:14px;
+    text-decoration: none;
+    color:#666; 
+}
+#product{
+    margin-top:20px;
+    display: flex;
+
+}
+.p_left{
+    width:450px;
+    height:542px;
+    overflow: hidden;
+}
+.p_left_md{
+    width:100%;
+    height:450px;
+    /* border:1px solid #333; */
+    background:url(../img/1.jpg) no-repeat;
+    background-size:450px 450px;
+}
+.p_left_sm{
+    display: flex;
+    height:85px;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #ddd;
+    margin-top:5px;
+}
+.p_left_sm>ul{
+   list-style: none
+}
+.p_left_sm>ul>li{
+    float: left;
+    margin:0px 5px
+}
+.p_left_sm>ul>li>a>img{
+    width:70px;
+    height:70px;
+}
+.p_left_sm>ul>li>a>img:hover{
+    border:1px solid #333;
+}
+.p_right{
+    width:720px;
+    height:715px;
+    background:#aaf;
+    margin-left:30px;
+}

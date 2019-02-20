@@ -1,16 +1,24 @@
-(function(){
-    /*打开右边导航栏*/ 
-    var nav=document.getElementById("head_navbtn")
-    nav.onclick=function(){
-        var nav=this;
-        var btn=document.getElementsByClassName("nav")[0]
-        btn.style.display="block";
-    }
-    /*关闭右边导航栏*/
-    var navclose=document.querySelector(".nav>button")
-    navclose.onclick=function(){
-        var navclose=this;
-        var btn=document.getElementsByClassName("nav")[0]
-        btn.style.display="none";
-    }
-})()
+$(function(){
+    /************************ 导航请求 *****************/
+    ajax({
+        url:"http://127.0.0.1:3000/nav",
+        type:"get",
+        dataType:"json"
+    }).then(function(data){
+        var html = ""
+        for(var item of data){
+            html += `<li><a href="${item.url}">${item.name}</a></li>`
+        }
+        var div1 = document.querySelector(".head_nav>ul")
+        var div2 = document.querySelector(".right_nav>ul")
+        div1.innerHTML = html
+        div2.innerHTML = html
+    })
+    /******************** 侧边导航 ********************/
+    $("#headnav").click(function(){
+        $(".nav").css("right","0").children(":first")
+        .click(function(){
+            $(".nav").css("right","-340px")
+        })
+    })
+})
