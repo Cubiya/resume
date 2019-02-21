@@ -39,10 +39,10 @@ $(function(){
     }).then(function(data){
         var yc = data
         var left_logo = `
-            <img src="${yc[0].plogo}">
-            <img src="${yc[1].plogo}">
-            <img src="${yc[2].plogo}">
-            <img src="${yc[3].plogo}">
+            <a href="javascript:;"><img src="${yc[0].plogo}"></a>
+            <a href="javascript:;"><img src="${yc[1].plogo}"></a>
+            <a href="javascript:;"><img src="${yc[2].plogo}"></a>
+            <a href="javascript:;"><img src="${yc[3].plogo}"></a>
         `
         var div1 = document.querySelector(".yc_left_img")
         div1.innerHTML = left_logo
@@ -55,9 +55,10 @@ $(function(){
             <div class="yc_middle1_des">
                 <span>${yc[0].title}</span>
             </div>
+            <a href="javascript:;">
             <div class="yc_middle1_js">
                 <p>${yc[0].title}</p>
-            </div>`
+            </div></a>`
         var div2 = document.querySelector("#yc .yc_middle1")
         div2.innerHTML = yc_middle1
 
@@ -69,9 +70,10 @@ $(function(){
             <div class="yc_middle1_des">
                 <span>${yc[1].title}</span>
             </div>
+            <a href="javascript:;">
             <div class="yc_middle2_js">
                 <p>${yc[1].title}</p>
-            </div>`
+            </div></a>`
         var div3 = document.querySelector("#yc .yc_middle2")
         div3.innerHTML = yc_middle2   
 
@@ -83,9 +85,10 @@ $(function(){
             <div class="yc_right_des">
                 <span>${yc[2].title}</span>
             </div>
+            <a href="javascript:;">
             <div class="yc_right_js1">
                 <p>${yc[2].title}</p>
-            </div>`
+            </div></a>`
         var div4 = document.querySelector("#yc .yc_right_1")
         div4.innerHTML = yc_right_1
 
@@ -97,9 +100,10 @@ $(function(){
             <div class="yc_right_des">
                 <span>${yc[3].title}</span>
             </div>
+            <a href="javascript:;">
             <div class="yc_right_js1">
                 <p>${yc[3].title}</p>
-            </div>`
+            </div></a>`
         var div5 = document.querySelector("#yc .yc_right_2")
         div5.innerHTML = yc_right_2
     })
@@ -114,7 +118,7 @@ $(function(){
         var html1 = `
         <div class="gx_clothes_2_img">
         <img src="${gx[0].pic}">
-        <div><p>从一而终，暗黑至极</p></div>
+        <a href="javascript:;"><div><p>${gx[0].title}</p></div></a>
         </div>
         <div class="gx_logo01">
         <img src="${gx[0].plogo}" >
@@ -128,7 +132,7 @@ $(function(){
         var html2 = `
         <div class="gx_clothes_2_img">
         <img src="${gx[1].pic}">
-        <div><p>从一而终，暗黑至极</p></div>
+        <a href="javascript:;"><div><p>${gx[1].title}</p></div></a>
         </div>
         <div class="gx_logo01">
         <img src="${gx[1].plogo}" >
@@ -142,7 +146,7 @@ $(function(){
         var html3 = `
         <div class="gx_clothes_2_img">
         <img src="${gx[2].pic}">
-        <div><p>从一而终，暗黑至极</p></div>
+        <a href="javascript:;"><div><p>${gx[2].title}</p></div></a>
         </div>
         <div class="gx_logo01">
         <img src="${gx[2].plogo}" >
@@ -156,7 +160,7 @@ $(function(){
         var html4 = `
         <div class="gx_clothes_2_img">
         <img src="${gx[3].pic}">
-        <div><p>从一而终，暗黑至极</p></div>
+        <a href="javascript:;"><div><p>${gx[3].title}</p></div></a>
         </div>
         <div class="gx_logo01">
         <img src="${gx[3].plogo}" >
@@ -170,7 +174,7 @@ $(function(){
         var html5 = `
         <div class="gx_clothes_2_img">
         <img src="${gx[4].pic}">
-        <div><p>从一而终，暗黑至极</p></div>
+        <a href="javascript:;"><div><p>${gx[4].title}</p></div></a>
         </div>
         <div class="gx_logo01">
         <img src="${gx[4].plogo}" >
@@ -196,7 +200,7 @@ $(function(){
             <div class="qc_clothes_1">
             <div class="qc_clothes1_img">
                 <img src="${item.pic}">
-                <div>${item.title}</div>
+                <a href="javascript:;"><div>${item.title}</div></a>
             </div>
             <div class="qc_clothes1_logo">
                 <img src="${item.plogo}" >
@@ -217,9 +221,9 @@ $(function(){
         var xh = data
         // 产品1
         var html1 = `
-        <img src="${xh[0].pic}">
-			<div class="xh_clothes_1_text">
-			<span>${xh[0].title}</span>
+        <a href="javascript:;"><img src="${xh[0].pic}"></a>
+		<div class="xh_clothes_1_text">
+		    <a href="javascript:;">${xh[0].title}</a>
 		</div>
         `
         var div1 = document.querySelector("#xh>.xh_body>.xh_clothes_1")
@@ -227,9 +231,9 @@ $(function(){
 
         // 产品2
         var html2 = `
-        <img src="${xh[1].pic}">
-			<div class="xh_clothes_1_text">
-			<span>${xh[1].title}</span>
+        <a href="javascript:;"><img src="${xh[1].pic}"></a>
+		<div class="xh_clothes_1_text">
+		    <a href="javascript:;">${xh[1].title}</a>
 		</div>
         `
         var div2 = document.querySelector("#xh>.xh_body>.xh_clothes_2")
@@ -237,9 +241,9 @@ $(function(){
 
         // 产品3
         var html3 = `
-        <img src="${xh[2].pic}">
-			<div class="xh_clothes_1_text">
-			<span>${xh[2].title}</span>
+        <a href="javascript:;"><img src="${xh[2].pic}"></a>
+		<div class="xh_clothes_1_text">
+            <a href="javascript:;">${xh[2].title}</a>
 		</div>
         `
         var div3 = document.querySelector("#xh>.xh_body>.xh_clothes_3")
@@ -247,9 +251,9 @@ $(function(){
 
         // logo
         var html4 = `
-        <img src="${xh[0].plogo}">
-		<img src="${xh[1].plogo}">
-		<img src="${xh[2].plogo}">
+        <a href="javascript:;"><img src="${xh[0].plogo}"></a>
+        <a href="javascript:;"><img src="${xh[1].plogo}"></a>
+        <a href="javascript:;"><img src="${xh[2].plogo}"></a>
         `
         var logo = document.querySelector("#xh .xh_right_img")
         logo.innerHTML = html4

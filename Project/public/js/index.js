@@ -47,12 +47,12 @@ $(function(){
 
     $(".yc_middle1,.yc_middle2,.yc_right_1,.yc_right_2").mouseenter(function(){
         // 进入函数
-        $(this).children(":last").css("top","0")
+        $(this).children(":last").children(":first").css("top","0")
         .prev().css("bottom","-100px")
         .prev().css("bottom","-90px")
     }).mouseleave(function(){
         // 离开函数
-        $(this).children(":last").css("top","-447px")
+        $(this).children(":last").children(":first").css("top","-447px")
         .prev().css("bottom","0")
         .prev().css("bottom","70px")
     })
@@ -72,23 +72,23 @@ $(function(){
             var dirName = new Array(1,2,3,4);
             if(e.type == 'mouseenter'){
                 if(dirName[direction]==1){
-                    $gx.children(":last").css({left:0,top:0})
+                    $gx.children(":last").children(":first").css({left:0,top:0})
                 }else if(dirName[direction]==2){
-                    $gx.children(":last").css({left:0,top:0})
+                    $gx.children(":last").children(":first").css({left:0,top:0})
                 }else if(dirName[direction]==3){
-                    $gx.children(":last").css({left:0,top:0})
+                    $gx.children(":last").children(":first").css({left:0,top:0})
                 }else if(dirName[direction]==4){
-                    $gx.children(":last").css({left:0,top:0})
+                    $gx.children(":last").children(":first").css({left:0,top:0})
                 }
             }else{
                 if(dirName[direction]==1){
-                    $gx.children(":last").css({left:0,top:`-${h}px`})
+                    $gx.children(":last").children(":first").css({left:0,top:`-${h}px`})
                 }else if(dirName[direction]==2){
-                    $gx.children(":last").css({left:`${w}px`,top:0})
+                    $gx.children(":last").children(":first").css({left:`${w}px`,top:0})
                 }else if(dirName[direction]==3){
-                    $gx.children(":last").css({left:0,top:`${h}px`})
+                    $gx.children(":last").children(":first").css({left:0,top:`${h}px`})
                 }else if(dirName[direction]==4){
-                    $gx.children(":last").css({left:`-${w}px`,top:0})
+                    $gx.children(":last").children(":first").css({left:`-${w}px`,top:0})
                 }
             }
       })

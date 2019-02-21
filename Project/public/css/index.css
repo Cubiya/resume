@@ -403,7 +403,7 @@ body{
     position:relative;
     overflow: hidden;
 }
-.gx_clothes_2_img>div{
+.gx_clothes_2_img div{
     width:100%;
     height:360px;
     background:rgba(0,0,0,0.3);
@@ -414,7 +414,7 @@ body{
     top:-360px;
     transition: all 0.2s;
 }
-.gx_clothes_2_img>div>p{
+.gx_clothes_2_img>a>div>p{
     font-size:14px;
     color:#fff;
     margin:0 auto;
@@ -640,6 +640,13 @@ body{
     padding:1rem;
     text-align:center;
     line-height:1.5rem;
+}
+.xh_clothes_1_text a{
+    color:#f2f2f2;
+    text-decoration: none;
+}
+.xh_clothes_1_text a:hover{
+    color:#fff;
 }
 /*底部信息*/
 .footer{
