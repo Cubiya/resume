@@ -34,11 +34,16 @@ server.get("/nav",(req,res)=>{
     })
 }) 
 
-//请求原创设计数据
+//首页产品数据
 server.get("/index_products",(req,res)=>{
     var sql = "SELECT pid,title,fid,pic,plogo FROM cubi_index_products"
     pool.query(sql,(err,result)=>{
         if(err) throw err
         res.send(result)
     })
+})
+
+// 原创设计数据
+server.get("yc_products",(req,res)=>{
+    var sql = "SELECT pid,price,md,ship FROM cubi_products WHERE fid=1"
 })

@@ -43,7 +43,6 @@ CREATE TABLE cubi_index_products(
     title VARCHAR(64),
     pic VARCHAR(128),
     plogo VARCHAR(128)
-
 );ENGINE=InnoDB DEFAULT CHARSET=utf8;
 INSERT INTO cubi_index_products VALUES(null,1,"生活气氛组先行意识生活形态","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_01.png");
 INSERT INTO cubi_index_products VALUES(null,1,"PSO新品首发","http://127.0.0.1:3000/yc/yc_06.jpg","http://127.0.0.1:3000/yc/yc_02.png");
@@ -67,14 +66,15 @@ INSERT INTO cubi_index_products VALUES(null,4,"欧美街头潮牌oversize宽松�
 CREATE TABLE cubi_products(
     pid INT PRIMARY KEY AUTO_INCREMENT,
     fid INT,
-    title VARCHAR(128),
     subtitle VARCHAR(128),
     price DECIMAL(10,2),
     sm VARCHAR(128),
     md VARCHAR(128),
     lg VARCHAR(128),
-    add VARCHAR(24),
+    ship VARCHAR(24),
     details VARCHAR(1024)
 );ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO cubi_products VALUES(null,1,"生活气氛组先行意识生活形态","【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东深圳")
+INSERT INTO cubi_products VALUES(null,1,"【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东深圳","12345");
+INSERT INTO cubi_products VALUES(null,1,"【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东惠州","123");
+INSERT INTO cubi_products VALUES(null,2,"【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东惠州","12312");
