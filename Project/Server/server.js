@@ -35,35 +35,8 @@ server.get("/nav",(req,res)=>{
 }) 
 
 //请求原创设计数据
-server.get("/index_yc",(req,res)=>{
-    var sql = "SELECT title,pic,plogo FROM cubi_index_yc"
-    pool.query(sql,(err,result)=>{
-        if(err) throw err
-        res.send(result)
-    })
-})
-
-//请求个性风潮数据
-server.get("/index_gx",(req,res)=>{
-    var sql = "SELECT title,pic,plogo FROM cubi_index_gx"
-    pool.query(sql,(err,result)=>{
-        if(err) throw err
-        res.send(result)
-    })
-})
-
-// 请求青春流行数据
-server.get("/index_qc",(req,res)=>{
-    var sql = "SELECT title,pic,plogo FROM cubi_index_qc"
-    pool.query(sql,(err,result)=>{
-        if(err) throw err
-        res.send(result)
-    })
-})
-
-// 请求嘻哈潮流数据
-server.get("/index_xh",(req,res)=>{
-    var sql = "SELECT title,pic,plogo FROM cubi_index_xh"
+server.get("/index_products",(req,res)=>{
+    var sql = "SELECT pid,title,fid,pic,plogo FROM cubi_index_products"
     pool.query(sql,(err,result)=>{
         if(err) throw err
         res.send(result)
