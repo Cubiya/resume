@@ -44,6 +44,50 @@ server.get("/index_products",(req,res)=>{
 })
 
 // 原创设计数据
-server.get("yc_products",(req,res)=>{
-    var sql = "SELECT pid,price,md,ship FROM cubi_products WHERE fid=1"
+server.get("/yc_products",(req,res)=>{
+    // var pno = req.query.pno
+    // var pageSize = req.query.pageSize
+    // if(!pno){
+    //     pno = 1;
+    // }
+    // if(!pageSize){
+    //     pageSize = 16;
+    // }
+    var sql = "SELECT pid,price,md,ship,title FROM cubi_products WHERE fid=1"
+    // var ps = parseInt(pageSize);
+    // //(2-1)*7= 7
+    // var offset = (pno-1)*pageSize;
+    pool.query(sql,(err,result)=>{
+        if(err) throw err
+        res.send(result)
+    })
+})
+// 原创设计分页
+server.get("/yc_product",(req,res)=>{
+    var pno = req.query.pno
+    var pageSize = req.query.pageSize
+    if(!pno){
+        pno = 1;
+    }
+    if(!pageSize){
+        pageSize = 16;
+    }
+    var sql = "SELECT pid,price,md,ship,title FROM cubi_products WHERE fid=1 LIMIT ?,?"
+    var ps = parseInt(pageSize);
+    //(2-1)*7= 7
+    var offset = (pno-1)*pageSize;
+    pool.query(sql,[offset,ps],(err,result)=>{
+        if(err) throw err
+        res.send(result)
+    })
+})
+
+//商品详情页
+server.get("/details",(req,res)=>{
+    var pid = req.query.pid
+    var sql = "SELECT title,subtitle,price,sm,md,lg,ship FROM cubi_products WHERE pid=?"
+    pool.query(sql,[pid],(err,result)=>{
+        if(err) throw err
+        res.send(result)
+    })
 })

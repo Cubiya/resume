@@ -62,10 +62,12 @@ INSERT INTO cubi_index_products VALUES(null,3,"傲娇小爷潮搭达人","http:/
 INSERT INTO cubi_index_products VALUES(null,4,"秋季欧美潮牌个性印花圆领卫衣男嘻哈宽松oversize国潮情侣外套女","http://127.0.0.1:3000/xh/xh_01.jpg","http://127.0.0.1:3000/xh/xh_logo01.png");
 INSERT INTO cubi_index_products VALUES(null,4,"美式街头简约字母连帽卫衣男女情侣加绒加大码宽松长袖套帽外套潮","http://127.0.0.1:3000/xh/xh_02.jpg","http://127.0.0.1:3000/xh/xh_logo02.png");
 INSERT INTO cubi_index_products VALUES(null,4,"欧美街头潮牌oversize宽松情侣卫衣男潮流外套","http://127.0.0.1:3000/xh/xh_03.jpg","http://127.0.0.1:3000/xh/xh_logo03.png");
+INSERT INTO cubi_index_products VALUES(null,1,"测试测试","http://127.0.0.1:3000/yc/yc_08.jpg","http://127.0.0.1:3000/yc/yc_04.png");
 
 CREATE TABLE cubi_products(
     pid INT PRIMARY KEY AUTO_INCREMENT,
     fid INT,
+    title VARCHAR(128),
     subtitle VARCHAR(128),
     price DECIMAL(10,2),
     sm VARCHAR(128),
@@ -75,6 +77,14 @@ CREATE TABLE cubi_products(
     details VARCHAR(1024)
 );ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO cubi_products VALUES(null,1,"【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东深圳","12345");
-INSERT INTO cubi_products VALUES(null,1,"【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东惠州","123");
-INSERT INTO cubi_products VALUES(null,2,"【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东惠州","12312");
+INSERT INTO cubi_products VALUES(null,1,"生活气氛组先行意识生活形态","【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东深圳","12345");
+INSERT INTO cubi_products VALUES(null,1,"PSO新品首发","【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东深圳","12345");
+INSERT INTO cubi_products VALUES(null,2,"从一而终，暗黑至极","【新年购买，享多重好礼】1、领券立减10元2、七天无理由退换",98,"http://127.0.0.1:3000/yc/yc_05_sm.jpg","http://127.0.0.1:3000/yc/yc_05.jpg","http://127.0.0.1:3000/yc/yc_05_lg.jpg","广东深圳","12345");
+
+CREATE TABLE cubi_cart(
+    cid INT PRIMARY KEY AUTO_INCREMENT,
+    count INT,
+    price DECIMAL(10,2),
+    pid INT,
+    
+);ENGINE=InnoDB DEFAULT CHARSET=utf8;

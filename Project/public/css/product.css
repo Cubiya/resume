@@ -250,17 +250,18 @@ body{
 .page{
     clear: both;
     height:50px;
+    display: flex;
+    justify-content: center;
 }
 .page ul{
     list-style: none;
-    margin-left:325px;
     height:100%;
 }
 .page ul li{
     float:left;
-    margin-left:15px;
+    margin:0px 10px;
 }
-.page ul li a{
+.page a{
     text-decoration: none;
     padding:10px;
     background:#f1f1f1;
@@ -271,7 +272,7 @@ body{
 .page ul li a:hover{
     background:#e1e1e1
 }
-.page ul li input{
+.page  input{
     width:30px;
     text-align: center;
 }
