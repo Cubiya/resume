@@ -86,5 +86,12 @@ CREATE TABLE cubi_cart(
     count INT,
     price DECIMAL(10,2),
     pid INT,
-    
 );ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE cubi_login(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    uname VARCHAR(25),
+    upwd VARCHAR(32)
+);ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO cubi_login VALUES(null,'tom',md5('123'))

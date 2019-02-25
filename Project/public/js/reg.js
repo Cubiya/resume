@@ -173,7 +173,23 @@ window.onload = function() {
 		var span = tip.lastElementChild;
 		if(ck.checked) {
 			if(checkUserName()&&checkPwd()&&checkPwd2()) {
-				alert("可以注册");
+				var uname = document.getElementById("userName").value
+				var upwd = document.getElementById("pwd2").value
+				// 发送请求
+				ajax({
+					url:"http://127.0.0.1:3000/reg?uname="+uname+"&upwd="+upwd,
+					type:"get",
+					dataType:"json"
+				}).then(function(data){
+					if(data.code==1){
+						confirm("注册成功,点击确定跳转到登录页面")
+						if(confirm){
+							window.location.href = "http://127.0.0.1:5500/public/login.html";
+						}
+					}else{
+						alert("注册失败")
+					}
+				})
 			} else {
 				return false;
 			}

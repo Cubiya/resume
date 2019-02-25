@@ -3,6 +3,7 @@ const bodyParser = require('body-Parser');
 var server = express();
 const cors = require("cors")
 const pool = require("./pool.js")
+const session = require("express-session")
 server.listen(3000);
 //将静态资源托管在public目录在
 server.use(express.static('public'))
@@ -10,6 +11,14 @@ server.use(express.static('public'))
 server.use(cors({
     origin:["http://127.0.0.1:5500"],
     credentials:false
+}))
+server.use(session({
+  secret:"128位随机字符",  //自定义安全字符串
+  resave:false,            //每次请求是否都要更新数据
+  saveUninitialized:true,  //初始化保存数据
+  cookie:{
+    maxAge:1000*60*60*8
+  }
 }))
 //将post请求的数据转为对象
 server.use(bodyParser.urlencoded({
@@ -45,18 +54,7 @@ server.get("/index_products",(req,res)=>{
 
 // 原创设计数据
 server.get("/yc_products",(req,res)=>{
-    // var pno = req.query.pno
-    // var pageSize = req.query.pageSize
-    // if(!pno){
-    //     pno = 1;
-    // }
-    // if(!pageSize){
-    //     pageSize = 16;
-    // }
     var sql = "SELECT pid,price,md,ship,title FROM cubi_products WHERE fid=1"
-    // var ps = parseInt(pageSize);
-    // //(2-1)*7= 7
-    // var offset = (pno-1)*pageSize;
     pool.query(sql,(err,result)=>{
         if(err) throw err
         res.send(result)
@@ -89,5 +87,36 @@ server.get("/details",(req,res)=>{
     pool.query(sql,[pid],(err,result)=>{
         if(err) throw err
         res.send(result)
+    })
+})
+//用户注册
+server.get("/reg",(req,res)=>{
+    var uname = req.query.uname
+    var upwd = req.query.upwd
+    var sql = "INSERT INTO cubi_login VALUES(null,?,md5(?))"
+    pool.query(sql,[uname,upwd],(err,result)=>{
+        if(err) throw err
+        if(result.affectedRows>0){
+            res.send({code:1,msg:"插入成功"})
+        }else{
+            res.send({code:-1,msg:"插入失败"})
+        }
+    })
+})
+
+//用户登录
+server.get("/login",(req,res)=>{
+    var uname = req.query.uname
+    var upwd = req.query.upwd
+    var sql = "SELECT id FROM cubi_login WHERE uname=? AND upwd=md5(?)"
+    pool.query(sql,[uname,upwd],(err,result)=>{
+        if(err) throw err
+        if(result.length == 0){
+            res.send({code:-1,msg:"用户名或密码错误"})
+        }else{
+            var id = result[0].id
+            req.session.uid = id
+            res.send({code:1,msg:"登录成功"})
+        }
     })
 })

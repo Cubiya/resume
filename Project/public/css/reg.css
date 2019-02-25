@@ -58,7 +58,7 @@ html,body{
 .register-box .box.right i{
 	width:20px;
 	height: 20px;
-	background: url(../images/right.png) no-repeat center center;
+	background: url(../img/right.png) no-repeat center center;
 	position: absolute;
 	top:50%;
 	margin-top: -10px;
@@ -86,29 +86,29 @@ html,body{
 }
 /*提示信息默认样式*/
 .register-box .tip.default i {
-	background: url(../images/default.png) no-repeat center center;
+	background: url(../img/default.png) no-repeat center center;
 }
 .register-box .tip.default span{
 	color: #ccc;
 }
 /*提示信息错误样式*/
 .register-box .tip.error i {
-	background: url(../images/error.png) no-repeat center center;
+	background: url(../img/error.png) no-repeat center center;
 }
 .register-box .tip.error span{
 	color: red;
 }
 /*提示信息密码弱*/
 .register-box .tip.ruo i {
-	background: url(../images/ruo.png) no-repeat center center;
+	background: url(../img/ruo.png) no-repeat center center;
 }
 /*提示信息密码中*/
 .register-box .tip.zhong i {
-	background: url(../images/zhong.png) no-repeat center center;
+	background: url(../img/zhong.png) no-repeat center center;
 }
 /*提示信息密码中*/
 .register-box .tip.qiang i {
-	background: url(../images/qiang.png) no-repeat center center;
+	background: url(../img/qiang.png) no-repeat center center;
 }
 /*京东用户注册协议*/
 .register-box.xieyi{

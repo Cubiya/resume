@@ -68,15 +68,20 @@
 <div class="logo-box">
     <div class="login" style="">
         <div class="bxs-row" style="text-align:center;">
-            <img id="logo" src="img/logo.jpg" style="width:72px;"><span class="tips" style="color:red;"></span>
+            <img id="logo" src="img/logo.jpg" style="width:72px;">
+            <span class="tips" style="color:red;"></span>
         </div>
         <div class="bxs-row">
-            <input type="text" class="username" placeholder="用户名" value="admin">
+            <input type="text" class="username" placeholder="用户名">
             <p class=" err err-username"></p>
         </div>
         <div class="bxs-row">
             <input type="password" class="password" placeholder="密码">
             <p class="err err-password"></p>
+        </div>
+        <div class="bxs-row" style="display:flex;justify-content: space-between">
+            <a href="http://127.0.0.1:5500/public/reg.html">立即注册</a>
+            <a href="javascript:;">忘记密码?</a>
         </div>
         <div class="bxs-row">
             <input type="submit" class="submit btn" value="登录">
@@ -87,6 +92,7 @@
     </div>
 </div>
 <script src="js/jquery-1.10.2.js"></script>
+<script src="js/ajax.js"></script>
 <script src="js/login.js"></script>
 <script>
     imgVer({
@@ -99,22 +105,41 @@
             'img/ver-2.png',
             'img/ver-3.png'
         ],
-        success:function () {
-            //alert('执行登录函数');
-            $(".login").css({
-                "left":"0",
-                "opacity":"1"
-            });
-            $(".verBox").css({
-                "left":"404px",
-                "opacity":"0"
-            });
-            $(".tips").html('你是不是不知道账号密码！？？？');
-            $("#logo").attr("src",'img/login-err.png')
+        // 判断是否登录成功
+        isTest:function(){
+            var uname = $(".username")[0].value
+            var upwd = $(".password")[0].value
+            ajax({
+                url:"http://127.0.0.1:3000/login?uname="+uname+"&upwd="+upwd,
+                type:"get",
+                dataType:"json"
+            }).then(function(data){
+                if(data.code==-1){
+                    function error() {
+                        $(".login").css({
+                            "left":"0",
+                            "opacity":"1"
+                        });
+                        $(".verBox").css({
+                            "left":"404px",
+                            "opacity":"0"
+                        });
+                        $(".tips").html('你是不是不知道账号密码！？？？');
+                        $("#logo").attr("src",'img/login-err.png')
+                    }
+                    error()
+                }else{
+                    function success() {
+                        //alert('执行登录函数');
+                        alert("验证通过，3秒后将自动跳转到首页")
+                        setTimeout(function(){
+                            window.location.href = "http://127.0.0.1:5500/public/index.html";
+                        },3000)
+                    }
+                    success()
+                }
+            })
         },
-        error:function () {
-            //alert('错误什么都不执行')
-        }
     });
     $(".submit").on('click',function () {
         if($(".username").val() == '') {
@@ -135,8 +160,5 @@
         }
     })
 </script>
-<div style="text-align:center;">
-<p><a href="http://127.0.0.1:5500/public/index.html">返回首页</a></p>
-</div>
 </body>
 </html>
