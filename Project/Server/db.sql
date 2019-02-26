@@ -95,3 +95,15 @@ CREATE TABLE cubi_login(
 );ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO cubi_login VALUES(null,'tom',md5('123'))
+
+CREATE TABLE cubi_cart(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    count INT,
+    price DECIMAL(15,2),
+    color VARCHAR(12),
+    size VARCHAR(12),
+    pid INT,
+    uid INT
+);ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO cubi_cart VALUES(null,1,108,"红色","XL",2,1);

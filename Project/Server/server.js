@@ -116,7 +116,23 @@ server.get("/login",(req,res)=>{
         }else{
             var id = result[0].id
             req.session.uid = id
+            console.log(req.session.uid)
             res.send({code:1,msg:"登录成功"})
         }
+    })
+})
+
+//购物车列表
+server.get("/cartlist",(req,res)=>{
+    var uid = req.session.uid
+    console.log(uid)
+    if(!uid){
+        res.send({code:-1,msg:"请登录"})
+        return;
+    }
+    var sql = "SELECT p.title,c.count,c.price,c.color,c.size FROM cubi_cart c,cubi_products p WHERE c.pid = p.pid AND c.uid=?"
+    pool.query(sql,[uid],(err,result)=>{
+        if(err) throw err
+        res.send({code:1,data:result})
     })
 })

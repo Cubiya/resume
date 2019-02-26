@@ -152,7 +152,7 @@
     width:500px;
 }
 .cart_head div:nth-child(3),.cart_head div:nth-child(4),.cart_head div:nth-child(5),.cart_head div:nth-child(6){
-    width:144px;
+    width:140px;
 }
 .cart_product{
     border:1px solid #e1e1e1;
@@ -213,7 +213,7 @@
     align-items: center;
 }
 .cart_foot div:first-child{
-    margin:0px 15px;
+    margin:0px 10px;
 }
 .cart_foot div:nth-child(2) a{
     text-decoration: none;

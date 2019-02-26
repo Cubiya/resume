@@ -1,4 +1,7 @@
 $(function(){
+     // 引入头部文件
+     $("#header").load("header.html")
+     
     /******************** 侧边导航 ********************/
 
     $("#headnav").click(function(){

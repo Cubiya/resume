@@ -1,4 +1,7 @@
 $(function(){
+    // 引入头部文件
+    $("#header").load("header.html")
+    // 详情页请求
     var search=location.search
     if(search!==""){
         var pid=search.split("=")[1]
